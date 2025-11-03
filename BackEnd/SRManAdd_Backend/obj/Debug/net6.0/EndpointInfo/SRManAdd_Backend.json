@@ -1,0 +1,445 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "SRManAdd_Backend",
+    "version": "1.0"
+  },
+  "paths": {
+    "/ManAdds/getOpenManAdds": {
+      "get": {
+        "tags": [
+          "SRManAdd_Backend"
+        ],
+        "operationId": "ManAdds.GetOpenManAdds",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ManAdd"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/ManAdds/getOpenManAdd": {
+      "get": {
+        "tags": [
+          "SRManAdd_Backend"
+        ],
+        "operationId": "ManAdds.GetOpenManAdd",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/ManAdds/UpdateOpenManAdd": {
+      "put": {
+        "tags": [
+          "SRManAdd_Backend"
+        ],
+        "operationId": "ManAdds.UpdateOpenManAdd",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ManAdd"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/ManAdds/getManAddLots": {
+      "get": {
+        "tags": [
+          "SRManAdd_Backend"
+        ],
+        "operationId": "ManAdds.getManAddLots",
+        "parameters": [
+          {
+            "name": "ManAddId",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/ManAdds/addManAddLot": {
+      "post": {
+        "tags": [
+          "SRManAdd_Backend"
+        ],
+        "operationId": "ManAdds.addManAddLot",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ManAddLot"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/ManAdds/lotValidation": {
+      "post": {
+        "tags": [
+          "SRManAdd_Backend"
+        ],
+        "operationId": "ManAdds.lotValidation",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LotValidation"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/ManAdds/deleteManAddLot": {
+      "delete": {
+        "tags": [
+          "SRManAdd_Backend"
+        ],
+        "operationId": "ManAdds.deleteManAddLot",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/LabelManagement/getTemplates": {
+      "get": {
+        "tags": [
+          "SRManAdd_Backend"
+        ],
+        "operationId": "LabelManagement.getTemplates",
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/AutoBatch/getStatus": {
+      "get": {
+        "tags": [
+          "SRManAdd_Backend"
+        ],
+        "operationId": "AutoBatch.getStatus",
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/AutoBatch/updateStatus": {
+      "put": {
+        "tags": [
+          "SRManAdd_Backend"
+        ],
+        "operationId": "AutoBatch.updateStatus",
+        "parameters": [
+          {
+            "name": "value",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/ManAddReports/getAll": {
+      "get": {
+        "tags": [
+          "SRManAdd_Backend"
+        ],
+        "operationId": "ManAddReports.GetAll",
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/ManAddReports/getManAdd": {
+      "get": {
+        "tags": [
+          "SRManAdd_Backend"
+        ],
+        "operationId": "ManAddReports.GetManAdd",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/ManAddUsers/getAll": {
+      "get": {
+        "tags": [
+          "SRManAdd_Backend"
+        ],
+        "operationId": "ManAddUsers.getAll",
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/Reception/closeShipment": {
+      "put": {
+        "tags": [
+          "SRManAdd_Backend"
+        ],
+        "operationId": "Reception.closeShipment",
+        "parameters": [
+          {
+            "name": "registrationValue",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "closedBy",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "LotValidation": {
+        "type": "object",
+        "properties": {
+          "templateName": {
+            "type": "string",
+            "nullable": true
+          },
+          "barCode1": {
+            "type": "string",
+            "nullable": true
+          },
+          "barCode2": {
+            "type": "string",
+            "nullable": true
+          },
+          "barCode3": {
+            "type": "string",
+            "nullable": true
+          },
+          "materialId": {
+            "type": "string",
+            "nullable": true
+          },
+          "materialValidation": {
+            "type": "boolean",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ManAdd": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "phaseID": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "phaseName": {
+            "type": "string",
+            "nullable": true
+          },
+          "materialID": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "materialName": {
+            "type": "string",
+            "nullable": true
+          },
+          "targetAmount": {
+            "type": "number",
+            "format": "float",
+            "nullable": true
+          },
+          "actualAmount": {
+            "type": "number",
+            "format": "float",
+            "nullable": true
+          },
+          "startDateTime": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "endDateTime": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "registeredBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "plcWorkID": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "registrationStatus": {
+            "type": "string",
+            "nullable": true
+          },
+          "equipmentName": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ManAddLot": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "manAdds_Registration_Id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "actualAmount": {
+            "type": "number",
+            "format": "float",
+            "nullable": true
+          },
+          "lastUpdateAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "registeredBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "lotId": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

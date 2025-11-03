@@ -1,0 +1,156 @@
+C:\Users\esortizpostr\source\repos\SRManAdd_Backend\SRManAdd_Backend\bin\Debug\net6.0\release\release\release\release\release\release\web.config
+C:\Users\esortizpostr\source\repos\SRManAdd_Backend\SRManAdd_Backend\bin\Debug\net6.0\release\release\release\release\release\web.config
+C:\Users\esortizpostr\source\repos\SRManAdd_Backend\SRManAdd_Backend\bin\Debug\net6.0\release\release\release\release\web.config
+C:\Users\esortizpostr\source\repos\SRManAdd_Backend\SRManAdd_Backend\bin\Debug\net6.0\release\release\release\web.config
+C:\Users\esortizpostr\source\repos\SRManAdd_Backend\SRManAdd_Backend\bin\Debug\net6.0\release\release\web.config
+C:\Users\esortizpostr\source\repos\SRManAdd_Backend\SRManAdd_Backend\bin\Debug\net6.0\release\web.config
+C:\Users\esortizpostr\source\repos\SRManAdd_Backend\SRManAdd_Backend\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\esortizpostr\source\repos\SRManAdd_Backend\SRManAdd_Backend\bin\Debug\net6.0\release\appsettings.Development.json
+C:\Users\esortizpostr\source\repos\SRManAdd_Backend\SRManAdd_Backend\bin\Debug\net6.0\release\appsettings.json
+C:\Users\esortizpostr\source\repos\SRManAdd_Backend\SRManAdd_Backend\bin\Debug\net6.0\release\release\appsettings.Development.json
+C:\Users\esortizpostr\source\repos\SRManAdd_Backend\SRManAdd_Backend\bin\Debug\net6.0\release\release\appsettings.json
+C:\Users\esortizpostr\source\repos\SRManAdd_Backend\SRManAdd_Backend\bin\Debug\net6.0\release\release\release\appsettings.Development.json
+C:\Users\esortizpostr\source\repos\SRManAdd_Backend\SRManAdd_Backend\bin\Debug\net6.0\release\release\release\appsettings.json
+C:\Users\esortizpostr\source\repos\SRManAdd_Backend\SRManAdd_Backend\bin\Debug\net6.0\release\release\release\release\appsettings.Development.json
+C:\Users\esortizpostr\source\repos\SRManAdd_Backend\SRManAdd_Backend\bin\Debug\net6.0\release\release\release\release\appsettings.json
+C:\Users\esortizpostr\source\repos\SRManAdd_Backend\SRManAdd_Backend\bin\Debug\net6.0\release\release\release\release\release\appsettings.Development.json
+C:\Users\esortizpostr\source\repos\SRManAdd_Backend\SRManAdd_Backend\bin\Debug\net6.0\release\release\release\release\release\appsettings.json
+C:\Users\esortizpostr\source\repos\SRManAdd_Backend\SRManAdd_Backend\bin\Debug\net6.0\release\release\release\release\release\release\appsettings.Development.json
+C:\Users\esortizpostr\source\repos\SRManAdd_Backend\SRManAdd_Backend\bin\Debug\net6.0\release\release\release\release\release\release\appsettings.json
+C:\Users\esortizpostr\source\repos\SRManAdd_Backend\SRManAdd_Backend\bin\Debug\net6.0\release\release\release\release\release\release\SRManAdd_Backend.deps.json
+C:\Users\esortizpostr\source\repos\SRManAdd_Backend\SRManAdd_Backend\bin\Debug\net6.0\release\release\release\release\release\release\SRManAdd_Backend.runtimeconfig.json
+C:\Users\esortizpostr\source\repos\SRManAdd_Backend\SRManAdd_Backend\bin\Debug\net6.0\release\release\release\release\release\SRManAdd_Backend.deps.json
+C:\Users\esortizpostr\source\repos\SRManAdd_Backend\SRManAdd_Backend\bin\Debug\net6.0\release\release\release\release\release\SRManAdd_Backend.runtimeconfig.json
+C:\Users\esortizpostr\source\repos\SRManAdd_Backend\SRManAdd_Backend\bin\Debug\net6.0\release\release\release\release\SRManAdd_Backend.deps.json
+C:\Users\esortizpostr\source\repos\SRManAdd_Backend\SRManAdd_Backend\bin\Debug\net6.0\release\release\release\release\SRManAdd_Backend.runtimeconfig.json
+C:\Users\esortizpostr\source\repos\SRManAdd_Backend\SRManAdd_Backend\bin\Debug\net6.0\release\release\release\SRManAdd_Backend.deps.json
+C:\Users\esortizpostr\source\repos\SRManAdd_Backend\SRManAdd_Backend\bin\Debug\net6.0\release\release\release\SRManAdd_Backend.runtimeconfig.json
+C:\Users\esortizpostr\source\repos\SRManAdd_Backend\SRManAdd_Backend\bin\Debug\net6.0\release\release\SRManAdd_Backend.deps.json
+C:\Users\esortizpostr\source\repos\SRManAdd_Backend\SRManAdd_Backend\bin\Debug\net6.0\release\release\SRManAdd_Backend.runtimeconfig.json
+C:\Users\esortizpostr\source\repos\SRManAdd_Backend\SRManAdd_Backend\bin\Debug\net6.0\release\SRManAdd_Backend.deps.json
+C:\Users\esortizpostr\source\repos\SRManAdd_Backend\SRManAdd_Backend\bin\Debug\net6.0\release\SRManAdd_Backend.runtimeconfig.json
+C:\Users\esortizpostr\source\repos\SRManAdd_Backend\SRManAdd_Backend\bin\Debug\net6.0\SRManAdd_Backend.exe
+C:\Users\esortizpostr\source\repos\SRManAdd_Backend\SRManAdd_Backend\bin\Debug\net6.0\SRManAdd_Backend.deps.json
+C:\Users\esortizpostr\source\repos\SRManAdd_Backend\SRManAdd_Backend\bin\Debug\net6.0\SRManAdd_Backend.runtimeconfig.json
+C:\Users\esortizpostr\source\repos\SRManAdd_Backend\SRManAdd_Backend\bin\Debug\net6.0\SRManAdd_Backend.dll
+C:\Users\esortizpostr\source\repos\SRManAdd_Backend\SRManAdd_Backend\bin\Debug\net6.0\SRManAdd_Backend.pdb
+C:\Users\esortizpostr\source\repos\SRManAdd_Backend\SRManAdd_Backend\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\esortizpostr\source\repos\SRManAdd_Backend\SRManAdd_Backend\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\esortizpostr\source\repos\SRManAdd_Backend\SRManAdd_Backend\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\esortizpostr\source\repos\SRManAdd_Backend\SRManAdd_Backend\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\esortizpostr\source\repos\SRManAdd_Backend\SRManAdd_Backend\bin\Debug\net6.0\System.Data.SqlClient.dll
+C:\Users\esortizpostr\source\repos\SRManAdd_Backend\SRManAdd_Backend\bin\Debug\net6.0\runtimes\win-arm64\native\sni.dll
+C:\Users\esortizpostr\source\repos\SRManAdd_Backend\SRManAdd_Backend\bin\Debug\net6.0\runtimes\win-x64\native\sni.dll
+C:\Users\esortizpostr\source\repos\SRManAdd_Backend\SRManAdd_Backend\bin\Debug\net6.0\runtimes\win-x86\native\sni.dll
+C:\Users\esortizpostr\source\repos\SRManAdd_Backend\SRManAdd_Backend\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\esortizpostr\source\repos\SRManAdd_Backend\SRManAdd_Backend\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\esortizpostr\source\repos\SRManAdd_Backend\SRManAdd_Backend\obj\Debug\net6.0\SRManAdd_Backend.csproj.AssemblyReference.cache
+C:\Users\esortizpostr\source\repos\SRManAdd_Backend\SRManAdd_Backend\obj\Debug\net6.0\SRManAdd_Backend.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\esortizpostr\source\repos\SRManAdd_Backend\SRManAdd_Backend\obj\Debug\net6.0\SRManAdd_Backend.AssemblyInfoInputs.cache
+C:\Users\esortizpostr\source\repos\SRManAdd_Backend\SRManAdd_Backend\obj\Debug\net6.0\SRManAdd_Backend.AssemblyInfo.cs
+C:\Users\esortizpostr\source\repos\SRManAdd_Backend\SRManAdd_Backend\obj\Debug\net6.0\SRManAdd_Backend.csproj.CoreCompileInputs.cache
+C:\Users\esortizpostr\source\repos\SRManAdd_Backend\SRManAdd_Backend\obj\Debug\net6.0\SRManAdd_Backend.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\esortizpostr\source\repos\SRManAdd_Backend\SRManAdd_Backend\obj\Debug\net6.0\SRManAdd_Backend.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\esortizpostr\source\repos\SRManAdd_Backend\SRManAdd_Backend\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\esortizpostr\source\repos\SRManAdd_Backend\SRManAdd_Backend\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\esortizpostr\source\repos\SRManAdd_Backend\SRManAdd_Backend\obj\Debug\net6.0\staticwebassets\msbuild.SRManAdd_Backend.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\esortizpostr\source\repos\SRManAdd_Backend\SRManAdd_Backend\obj\Debug\net6.0\staticwebassets\msbuild.build.SRManAdd_Backend.props
+C:\Users\esortizpostr\source\repos\SRManAdd_Backend\SRManAdd_Backend\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.SRManAdd_Backend.props
+C:\Users\esortizpostr\source\repos\SRManAdd_Backend\SRManAdd_Backend\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.SRManAdd_Backend.props
+C:\Users\esortizpostr\source\repos\SRManAdd_Backend\SRManAdd_Backend\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\esortizpostr\source\repos\SRManAdd_Backend\SRManAdd_Backend\obj\Debug\net6.0\scopedcss\bundle\SRManAdd_Backend.styles.css
+C:\Users\esortizpostr\source\repos\SRManAdd_Backend\SRManAdd_Backend\obj\Debug\net6.0\SRManAdd.F054F370.Up2Date
+C:\Users\esortizpostr\source\repos\SRManAdd_Backend\SRManAdd_Backend\obj\Debug\net6.0\SRManAdd_Backend.dll
+C:\Users\esortizpostr\source\repos\SRManAdd_Backend\SRManAdd_Backend\obj\Debug\net6.0\refint\SRManAdd_Backend.dll
+C:\Users\esortizpostr\source\repos\SRManAdd_Backend\SRManAdd_Backend\obj\Debug\net6.0\SRManAdd_Backend.pdb
+C:\Users\esortizpostr\source\repos\SRManAdd_Backend\SRManAdd_Backend\obj\Debug\net6.0\SRManAdd_Backend.genruntimeconfig.cache
+C:\Users\esortizpostr\source\repos\SRManAdd_Backend\SRManAdd_Backend\obj\Debug\net6.0\ref\SRManAdd_Backend.dll
+C:\Users\esortizpostr\Source\Repos\TP-SalsaRica-ManAddRegistration\BackEnd\SRManAdd_Backend\bin\Debug\net6.0\release\web.config
+C:\Users\esortizpostr\Source\Repos\TP-SalsaRica-ManAddRegistration\BackEnd\SRManAdd_Backend\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\esortizpostr\Source\Repos\TP-SalsaRica-ManAddRegistration\BackEnd\SRManAdd_Backend\bin\Debug\net6.0\release\appsettings.Development.json
+C:\Users\esortizpostr\Source\Repos\TP-SalsaRica-ManAddRegistration\BackEnd\SRManAdd_Backend\bin\Debug\net6.0\release\SRManAdd_Backend.deps.json
+C:\Users\esortizpostr\Source\Repos\TP-SalsaRica-ManAddRegistration\BackEnd\SRManAdd_Backend\bin\Debug\net6.0\release\SRManAdd_Backend.runtimeconfig.json
+C:\Users\esortizpostr\Source\Repos\TP-SalsaRica-ManAddRegistration\BackEnd\SRManAdd_Backend\bin\Debug\net6.0\SRManAdd_Backend.exe
+C:\Users\esortizpostr\Source\Repos\TP-SalsaRica-ManAddRegistration\BackEnd\SRManAdd_Backend\bin\Debug\net6.0\SRManAdd_Backend.deps.json
+C:\Users\esortizpostr\Source\Repos\TP-SalsaRica-ManAddRegistration\BackEnd\SRManAdd_Backend\bin\Debug\net6.0\SRManAdd_Backend.runtimeconfig.json
+C:\Users\esortizpostr\Source\Repos\TP-SalsaRica-ManAddRegistration\BackEnd\SRManAdd_Backend\bin\Debug\net6.0\SRManAdd_Backend.dll
+C:\Users\esortizpostr\Source\Repos\TP-SalsaRica-ManAddRegistration\BackEnd\SRManAdd_Backend\bin\Debug\net6.0\SRManAdd_Backend.pdb
+C:\Users\esortizpostr\Source\Repos\TP-SalsaRica-ManAddRegistration\BackEnd\SRManAdd_Backend\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\esortizpostr\Source\Repos\TP-SalsaRica-ManAddRegistration\BackEnd\SRManAdd_Backend\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\esortizpostr\Source\Repos\TP-SalsaRica-ManAddRegistration\BackEnd\SRManAdd_Backend\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\esortizpostr\Source\Repos\TP-SalsaRica-ManAddRegistration\BackEnd\SRManAdd_Backend\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\esortizpostr\Source\Repos\TP-SalsaRica-ManAddRegistration\BackEnd\SRManAdd_Backend\bin\Debug\net6.0\System.Data.SqlClient.dll
+C:\Users\esortizpostr\Source\Repos\TP-SalsaRica-ManAddRegistration\BackEnd\SRManAdd_Backend\bin\Debug\net6.0\runtimes\win-arm64\native\sni.dll
+C:\Users\esortizpostr\Source\Repos\TP-SalsaRica-ManAddRegistration\BackEnd\SRManAdd_Backend\bin\Debug\net6.0\runtimes\win-x64\native\sni.dll
+C:\Users\esortizpostr\Source\Repos\TP-SalsaRica-ManAddRegistration\BackEnd\SRManAdd_Backend\bin\Debug\net6.0\runtimes\win-x86\native\sni.dll
+C:\Users\esortizpostr\Source\Repos\TP-SalsaRica-ManAddRegistration\BackEnd\SRManAdd_Backend\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\esortizpostr\Source\Repos\TP-SalsaRica-ManAddRegistration\BackEnd\SRManAdd_Backend\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\esortizpostr\Source\Repos\TP-SalsaRica-ManAddRegistration\BackEnd\SRManAdd_Backend\obj\Debug\net6.0\SRManAdd_Backend.csproj.AssemblyReference.cache
+C:\Users\esortizpostr\Source\Repos\TP-SalsaRica-ManAddRegistration\BackEnd\SRManAdd_Backend\obj\Debug\net6.0\SRManAdd_Backend.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\esortizpostr\Source\Repos\TP-SalsaRica-ManAddRegistration\BackEnd\SRManAdd_Backend\obj\Debug\net6.0\SRManAdd_Backend.AssemblyInfoInputs.cache
+C:\Users\esortizpostr\Source\Repos\TP-SalsaRica-ManAddRegistration\BackEnd\SRManAdd_Backend\obj\Debug\net6.0\SRManAdd_Backend.AssemblyInfo.cs
+C:\Users\esortizpostr\Source\Repos\TP-SalsaRica-ManAddRegistration\BackEnd\SRManAdd_Backend\obj\Debug\net6.0\SRManAdd_Backend.csproj.CoreCompileInputs.cache
+C:\Users\esortizpostr\Source\Repos\TP-SalsaRica-ManAddRegistration\BackEnd\SRManAdd_Backend\obj\Debug\net6.0\SRManAdd_Backend.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\esortizpostr\Source\Repos\TP-SalsaRica-ManAddRegistration\BackEnd\SRManAdd_Backend\obj\Debug\net6.0\SRManAdd_Backend.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\esortizpostr\Source\Repos\TP-SalsaRica-ManAddRegistration\BackEnd\SRManAdd_Backend\obj\Debug\net6.0\SRManAdd_Backend.sourcelink.json
+C:\Users\esortizpostr\Source\Repos\TP-SalsaRica-ManAddRegistration\BackEnd\SRManAdd_Backend\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\esortizpostr\Source\Repos\TP-SalsaRica-ManAddRegistration\BackEnd\SRManAdd_Backend\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\esortizpostr\Source\Repos\TP-SalsaRica-ManAddRegistration\BackEnd\SRManAdd_Backend\obj\Debug\net6.0\staticwebassets\msbuild.SRManAdd_Backend.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\esortizpostr\Source\Repos\TP-SalsaRica-ManAddRegistration\BackEnd\SRManAdd_Backend\obj\Debug\net6.0\staticwebassets\msbuild.build.SRManAdd_Backend.props
+C:\Users\esortizpostr\Source\Repos\TP-SalsaRica-ManAddRegistration\BackEnd\SRManAdd_Backend\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.SRManAdd_Backend.props
+C:\Users\esortizpostr\Source\Repos\TP-SalsaRica-ManAddRegistration\BackEnd\SRManAdd_Backend\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.SRManAdd_Backend.props
+C:\Users\esortizpostr\Source\Repos\TP-SalsaRica-ManAddRegistration\BackEnd\SRManAdd_Backend\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\esortizpostr\Source\Repos\TP-SalsaRica-ManAddRegistration\BackEnd\SRManAdd_Backend\obj\Debug\net6.0\scopedcss\bundle\SRManAdd_Backend.styles.css
+C:\Users\esortizpostr\Source\Repos\TP-SalsaRica-ManAddRegistration\BackEnd\SRManAdd_Backend\obj\Debug\net6.0\SRManAdd.F054F370.Up2Date
+C:\Users\esortizpostr\Source\Repos\TP-SalsaRica-ManAddRegistration\BackEnd\SRManAdd_Backend\obj\Debug\net6.0\SRManAdd_Backend.dll
+C:\Users\esortizpostr\Source\Repos\TP-SalsaRica-ManAddRegistration\BackEnd\SRManAdd_Backend\obj\Debug\net6.0\refint\SRManAdd_Backend.dll
+C:\Users\esortizpostr\Source\Repos\TP-SalsaRica-ManAddRegistration\BackEnd\SRManAdd_Backend\obj\Debug\net6.0\SRManAdd_Backend.pdb
+C:\Users\esortizpostr\Source\Repos\TP-SalsaRica-ManAddRegistration\BackEnd\SRManAdd_Backend\obj\Debug\net6.0\SRManAdd_Backend.genruntimeconfig.cache
+C:\Users\esortizpostr\Source\Repos\TP-SalsaRica-ManAddRegistration\BackEnd\SRManAdd_Backend\obj\Debug\net6.0\ref\SRManAdd_Backend.dll
+C:\Users\esortizpostr\Source\Repos\TP-SalsaRica-ManAddRegistration\BackEnd\SRManAdd_Backend\bin\Debug\net6.0\release\appsettings.json
+C:\Users\ESORTIZPOSTR\OneDrive - Tetra Pak\Documents\REPOSITORIES\TP-SalsaRica-ManAddRegistration\BackEnd\SRManAdd_Backend\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\ESORTIZPOSTR\OneDrive - Tetra Pak\Documents\REPOSITORIES\TP-SalsaRica-ManAddRegistration\BackEnd\SRManAdd_Backend\bin\Debug\net6.0\release\web.config
+C:\Users\ESORTIZPOSTR\OneDrive - Tetra Pak\Documents\REPOSITORIES\TP-SalsaRica-ManAddRegistration\BackEnd\SRManAdd_Backend\bin\Debug\net6.0\release\appsettings.Development.json
+C:\Users\ESORTIZPOSTR\OneDrive - Tetra Pak\Documents\REPOSITORIES\TP-SalsaRica-ManAddRegistration\BackEnd\SRManAdd_Backend\bin\Debug\net6.0\release\appsettings.json
+C:\Users\ESORTIZPOSTR\OneDrive - Tetra Pak\Documents\REPOSITORIES\TP-SalsaRica-ManAddRegistration\BackEnd\SRManAdd_Backend\bin\Debug\net6.0\release\SRManAdd_Backend.deps.json
+C:\Users\ESORTIZPOSTR\OneDrive - Tetra Pak\Documents\REPOSITORIES\TP-SalsaRica-ManAddRegistration\BackEnd\SRManAdd_Backend\bin\Debug\net6.0\release\SRManAdd_Backend.runtimeconfig.json
+C:\Users\ESORTIZPOSTR\OneDrive - Tetra Pak\Documents\REPOSITORIES\TP-SalsaRica-ManAddRegistration\BackEnd\SRManAdd_Backend\bin\Debug\net6.0\SRManAdd_Backend.staticwebassets.endpoints.json
+C:\Users\ESORTIZPOSTR\OneDrive - Tetra Pak\Documents\REPOSITORIES\TP-SalsaRica-ManAddRegistration\BackEnd\SRManAdd_Backend\bin\Debug\net6.0\SRManAdd_Backend.exe
+C:\Users\ESORTIZPOSTR\OneDrive - Tetra Pak\Documents\REPOSITORIES\TP-SalsaRica-ManAddRegistration\BackEnd\SRManAdd_Backend\bin\Debug\net6.0\SRManAdd_Backend.deps.json
+C:\Users\ESORTIZPOSTR\OneDrive - Tetra Pak\Documents\REPOSITORIES\TP-SalsaRica-ManAddRegistration\BackEnd\SRManAdd_Backend\bin\Debug\net6.0\SRManAdd_Backend.runtimeconfig.json
+C:\Users\ESORTIZPOSTR\OneDrive - Tetra Pak\Documents\REPOSITORIES\TP-SalsaRica-ManAddRegistration\BackEnd\SRManAdd_Backend\bin\Debug\net6.0\SRManAdd_Backend.dll
+C:\Users\ESORTIZPOSTR\OneDrive - Tetra Pak\Documents\REPOSITORIES\TP-SalsaRica-ManAddRegistration\BackEnd\SRManAdd_Backend\bin\Debug\net6.0\SRManAdd_Backend.pdb
+C:\Users\ESORTIZPOSTR\OneDrive - Tetra Pak\Documents\REPOSITORIES\TP-SalsaRica-ManAddRegistration\BackEnd\SRManAdd_Backend\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\ESORTIZPOSTR\OneDrive - Tetra Pak\Documents\REPOSITORIES\TP-SalsaRica-ManAddRegistration\BackEnd\SRManAdd_Backend\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\ESORTIZPOSTR\OneDrive - Tetra Pak\Documents\REPOSITORIES\TP-SalsaRica-ManAddRegistration\BackEnd\SRManAdd_Backend\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\ESORTIZPOSTR\OneDrive - Tetra Pak\Documents\REPOSITORIES\TP-SalsaRica-ManAddRegistration\BackEnd\SRManAdd_Backend\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\ESORTIZPOSTR\OneDrive - Tetra Pak\Documents\REPOSITORIES\TP-SalsaRica-ManAddRegistration\BackEnd\SRManAdd_Backend\bin\Debug\net6.0\System.Data.SqlClient.dll
+C:\Users\ESORTIZPOSTR\OneDrive - Tetra Pak\Documents\REPOSITORIES\TP-SalsaRica-ManAddRegistration\BackEnd\SRManAdd_Backend\bin\Debug\net6.0\runtimes\win-arm64\native\sni.dll
+C:\Users\ESORTIZPOSTR\OneDrive - Tetra Pak\Documents\REPOSITORIES\TP-SalsaRica-ManAddRegistration\BackEnd\SRManAdd_Backend\bin\Debug\net6.0\runtimes\win-x64\native\sni.dll
+C:\Users\ESORTIZPOSTR\OneDrive - Tetra Pak\Documents\REPOSITORIES\TP-SalsaRica-ManAddRegistration\BackEnd\SRManAdd_Backend\bin\Debug\net6.0\runtimes\win-x86\native\sni.dll
+C:\Users\ESORTIZPOSTR\OneDrive - Tetra Pak\Documents\REPOSITORIES\TP-SalsaRica-ManAddRegistration\BackEnd\SRManAdd_Backend\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\ESORTIZPOSTR\OneDrive - Tetra Pak\Documents\REPOSITORIES\TP-SalsaRica-ManAddRegistration\BackEnd\SRManAdd_Backend\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\ESORTIZPOSTR\OneDrive - Tetra Pak\Documents\REPOSITORIES\TP-SalsaRica-ManAddRegistration\BackEnd\SRManAdd_Backend\obj\Debug\net6.0\SRManAdd_Backend.csproj.AssemblyReference.cache
+C:\Users\ESORTIZPOSTR\OneDrive - Tetra Pak\Documents\REPOSITORIES\TP-SalsaRica-ManAddRegistration\BackEnd\SRManAdd_Backend\obj\Debug\net6.0\SRManAdd_Backend.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ESORTIZPOSTR\OneDrive - Tetra Pak\Documents\REPOSITORIES\TP-SalsaRica-ManAddRegistration\BackEnd\SRManAdd_Backend\obj\Debug\net6.0\SRManAdd_Backend.AssemblyInfoInputs.cache
+C:\Users\ESORTIZPOSTR\OneDrive - Tetra Pak\Documents\REPOSITORIES\TP-SalsaRica-ManAddRegistration\BackEnd\SRManAdd_Backend\obj\Debug\net6.0\SRManAdd_Backend.AssemblyInfo.cs
+C:\Users\ESORTIZPOSTR\OneDrive - Tetra Pak\Documents\REPOSITORIES\TP-SalsaRica-ManAddRegistration\BackEnd\SRManAdd_Backend\obj\Debug\net6.0\SRManAdd_Backend.csproj.CoreCompileInputs.cache
+C:\Users\ESORTIZPOSTR\OneDrive - Tetra Pak\Documents\REPOSITORIES\TP-SalsaRica-ManAddRegistration\BackEnd\SRManAdd_Backend\obj\Debug\net6.0\SRManAdd_Backend.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\ESORTIZPOSTR\OneDrive - Tetra Pak\Documents\REPOSITORIES\TP-SalsaRica-ManAddRegistration\BackEnd\SRManAdd_Backend\obj\Debug\net6.0\SRManAdd_Backend.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ESORTIZPOSTR\OneDrive - Tetra Pak\Documents\REPOSITORIES\TP-SalsaRica-ManAddRegistration\BackEnd\SRManAdd_Backend\obj\Debug\net6.0\SRManAdd_Backend.sourcelink.json
+C:\Users\ESORTIZPOSTR\OneDrive - Tetra Pak\Documents\REPOSITORIES\TP-SalsaRica-ManAddRegistration\BackEnd\SRManAdd_Backend\obj\Debug\net6.0\scopedcss\bundle\SRManAdd_Backend.styles.css
+C:\Users\ESORTIZPOSTR\OneDrive - Tetra Pak\Documents\REPOSITORIES\TP-SalsaRica-ManAddRegistration\BackEnd\SRManAdd_Backend\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\ESORTIZPOSTR\OneDrive - Tetra Pak\Documents\REPOSITORIES\TP-SalsaRica-ManAddRegistration\BackEnd\SRManAdd_Backend\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\ESORTIZPOSTR\OneDrive - Tetra Pak\Documents\REPOSITORIES\TP-SalsaRica-ManAddRegistration\BackEnd\SRManAdd_Backend\obj\Debug\net6.0\staticwebassets.build.endpoints.json
+C:\Users\ESORTIZPOSTR\OneDrive - Tetra Pak\Documents\REPOSITORIES\TP-SalsaRica-ManAddRegistration\BackEnd\SRManAdd_Backend\obj\Debug\net6.0\SRManAdd.F054F370.Up2Date
+C:\Users\ESORTIZPOSTR\OneDrive - Tetra Pak\Documents\REPOSITORIES\TP-SalsaRica-ManAddRegistration\BackEnd\SRManAdd_Backend\obj\Debug\net6.0\SRManAdd_Backend.dll
+C:\Users\ESORTIZPOSTR\OneDrive - Tetra Pak\Documents\REPOSITORIES\TP-SalsaRica-ManAddRegistration\BackEnd\SRManAdd_Backend\obj\Debug\net6.0\refint\SRManAdd_Backend.dll
+C:\Users\ESORTIZPOSTR\OneDrive - Tetra Pak\Documents\REPOSITORIES\TP-SalsaRica-ManAddRegistration\BackEnd\SRManAdd_Backend\obj\Debug\net6.0\SRManAdd_Backend.pdb
+C:\Users\ESORTIZPOSTR\OneDrive - Tetra Pak\Documents\REPOSITORIES\TP-SalsaRica-ManAddRegistration\BackEnd\SRManAdd_Backend\obj\Debug\net6.0\SRManAdd_Backend.genruntimeconfig.cache
+C:\Users\ESORTIZPOSTR\OneDrive - Tetra Pak\Documents\REPOSITORIES\TP-SalsaRica-ManAddRegistration\BackEnd\SRManAdd_Backend\obj\Debug\net6.0\ref\SRManAdd_Backend.dll
+C:\Users\ESORTIZPOSTR\OneDrive - Tetra Pak\Documents\REPOSITORIES\TP-SalsaRica-ManAddRegistration\BackEnd\SRManAdd_Backend\obj\Debug\net6.0\rpswa.dswa.cache.json
+C:\Users\ESORTIZPOSTR\OneDrive - Tetra Pak\Documents\REPOSITORIES\TP-SalsaRica-ManAddRegistration\BackEnd\SRManAdd_Backend\obj\Debug\net6.0\rjimswa.dswa.cache.json
+C:\Users\ESORTIZPOSTR\OneDrive - Tetra Pak\Documents\REPOSITORIES\TP-SalsaRica-ManAddRegistration\BackEnd\SRManAdd_Backend\obj\Debug\net6.0\rjsmrazor.dswa.cache.json
+C:\Users\ESORTIZPOSTR\OneDrive - Tetra Pak\Documents\REPOSITORIES\TP-SalsaRica-ManAddRegistration\BackEnd\SRManAdd_Backend\obj\Debug\net6.0\rjsmcshtml.dswa.cache.json
+C:\Users\ESORTIZPOSTR\OneDrive - Tetra Pak\Documents\REPOSITORIES\TP-SalsaRica-ManAddRegistration\BackEnd\SRManAdd_Backend\obj\Debug\net6.0\staticwebassets.build.json.cache
+C:\Users\ESORTIZPOSTR\OneDrive - Tetra Pak\Documents\REPOSITORIES\TP-SalsaRica-ManAddRegistration\BackEnd\SRManAdd_Backend\obj\Debug\net6.0\staticwebassets.upToDateCheck.txt

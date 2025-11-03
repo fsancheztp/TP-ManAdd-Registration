@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\Users\esortizpostr\source\repos\TP-SalsaRica-ManAddRegistration\BackEnd\SRManAdd_Backend\release</_PublishTargetUrl>
+    <History>True|2025-01-15T06:43:55.5047520Z||;True|2025-01-15T07:42:14.4422765+01:00||;True|2025-01-15T07:37:03.0907358+01:00||;True|2025-01-15T07:36:12.7605450+01:00||;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+</Project>

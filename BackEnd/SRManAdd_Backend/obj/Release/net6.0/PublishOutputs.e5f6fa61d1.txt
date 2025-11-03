@@ -1,0 +1,16 @@
+C:\Users\esortizpostr\source\repos\SRManAdd_Backend\SRManAdd_Backend\obj\Release\net6.0\PubTmp\Out\SRManAdd_Backend.exe
+C:\Users\esortizpostr\source\repos\SRManAdd_Backend\SRManAdd_Backend\obj\Release\net6.0\PubTmp\Out\appsettings.Development.json
+C:\Users\esortizpostr\source\repos\SRManAdd_Backend\SRManAdd_Backend\obj\Release\net6.0\PubTmp\Out\SRManAdd_Backend.dll
+C:\Users\esortizpostr\source\repos\SRManAdd_Backend\SRManAdd_Backend\obj\Release\net6.0\PubTmp\Out\SRManAdd_Backend.deps.json
+C:\Users\esortizpostr\source\repos\SRManAdd_Backend\SRManAdd_Backend\obj\Release\net6.0\PubTmp\Out\SRManAdd_Backend.runtimeconfig.json
+C:\Users\esortizpostr\source\repos\SRManAdd_Backend\SRManAdd_Backend\obj\Release\net6.0\PubTmp\Out\SRManAdd_Backend.pdb
+C:\Users\esortizpostr\source\repos\SRManAdd_Backend\SRManAdd_Backend\obj\Release\net6.0\PubTmp\Out\Microsoft.OpenApi.dll
+C:\Users\esortizpostr\source\repos\SRManAdd_Backend\SRManAdd_Backend\obj\Release\net6.0\PubTmp\Out\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\esortizpostr\source\repos\SRManAdd_Backend\SRManAdd_Backend\obj\Release\net6.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\esortizpostr\source\repos\SRManAdd_Backend\SRManAdd_Backend\obj\Release\net6.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\esortizpostr\source\repos\SRManAdd_Backend\SRManAdd_Backend\obj\Release\net6.0\PubTmp\Out\System.Data.SqlClient.dll
+C:\Users\esortizpostr\source\repos\SRManAdd_Backend\SRManAdd_Backend\obj\Release\net6.0\PubTmp\Out\runtimes\win-arm64\native\sni.dll
+C:\Users\esortizpostr\source\repos\SRManAdd_Backend\SRManAdd_Backend\obj\Release\net6.0\PubTmp\Out\runtimes\win-x64\native\sni.dll
+C:\Users\esortizpostr\source\repos\SRManAdd_Backend\SRManAdd_Backend\obj\Release\net6.0\PubTmp\Out\runtimes\win-x86\native\sni.dll
+C:\Users\esortizpostr\source\repos\SRManAdd_Backend\SRManAdd_Backend\obj\Release\net6.0\PubTmp\Out\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\esortizpostr\source\repos\SRManAdd_Backend\SRManAdd_Backend\obj\Release\net6.0\PubTmp\Out\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll

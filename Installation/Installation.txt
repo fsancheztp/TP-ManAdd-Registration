@@ -1,0 +1,5 @@
+1. Install SQL files
+2. Install node & .NET dependencies	
+	a. Install .NET Hosting Bundle dotnet-hosting-6.0.35-win.exe (https://dotnet.microsoft.com/es-es/download/dotnet/6.0)
+4. Backend (web API) Create a new site or add a new application to the Default site
+5. Front End (web app) Create a new site or add a new application to the Default site

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\Users\esortizpostr\source\repos\SRManAdd_Backend\SRManAdd_Backend\release</_PublishTargetUrl>
+    <History>True|2025-05-26T10:59:32.8589216Z||;True|2025-05-26T11:50:07.6613928+02:00||;True|2024-11-12T11:45:35.3611084+01:00||;True|2024-11-12T11:43:08.0610818+01:00||;True|2024-11-05T12:42:20.9630165+01:00||;True|2024-11-05T12:26:15.0186615+01:00||;True|2024-11-05T12:18:20.3753266+01:00||;True|2024-11-05T12:09:43.3299284+01:00||;True|2024-11-04T14:24:08.6819938+01:00||;True|2024-11-04T12:59:07.7752900+01:00||;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+</Project>
