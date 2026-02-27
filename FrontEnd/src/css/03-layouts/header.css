@@ -1,8 +1,8 @@
  :root {
   /* Tune these to your corporate palette */
-  --brand-blue: #023491;
+  --brand-blue: #0063a6;
   --on-brand: #ffffff;
-  --header-height: 56px;
+  --header-height: 65px;
   --icon-slot: 48px; /* keeps the title centered regardless of text length */
 }
 
@@ -36,7 +36,7 @@
   margin: 0;
   padding: 0 8px;
   text-align: center;
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 700;
   line-height: 1;
   color: var(--on-primary);

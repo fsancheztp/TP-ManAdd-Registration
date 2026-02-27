@@ -9,12 +9,7 @@ import {
 } from "@/actions/actions";
 
 import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardFooter,
- // CardHeader,
-} from "@/components/ui/card";
+
 import { Input } from "@/components/ui/input";
 
 import {
@@ -28,7 +23,6 @@ import {
 import {
   Table,
   TableBody,
-  TableCaption,
   TableCell,
   TableHead,
   TableHeader,
@@ -51,7 +45,7 @@ import {
 // Removed Avatar to avoid stray fallback dot
 import { Trash2Icon } from "lucide-react";
 
-import React, { useEffect, useRef, useState } from "react";
+import  { useEffect, useRef, useState } from "react";
 import { useLocation, useNavigate } from "react-router";
 
 import "@/css/03-layouts/section.css";
@@ -59,6 +53,8 @@ import "@/css/04-components/card.css";
 import "@/css/02-utilities/form-row.css";
 import "@/css/03-layouts/page.css";
 import { ManAddCard } from "@/components/ManAddCard";
+import Header from "@/components/Header";
+
 
 const ManAddPage = () => {
   const { state } = useLocation();
@@ -268,16 +264,8 @@ const ManAddPage = () => {
 
   return (
     <main className="page">
+      <Header title = {manAdd?.phaseName}/>
       <div className="page__container">
-
-        {/* SECTION HEADER */}
-        <section className="corp-section">
-          <header className="corp-section-header corp-section-header--primary">
-            <h2 className="corp-section-title corp-section-title--on-primary">
-              Manual Addition {id}
-            </h2>
-          </header>
-        </section>
 
         {/* CARD */}
 

@@ -1,0 +1,73 @@
+/* -----------------------------------------------------------
+   Component: Corp MenuItem (for Home Main Menu)
+   ----------------------------------------------------------- */
+
+/* Container that holds a vertical list of menu items */
+.corp-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-lg, 16px);
+  width: 100%;
+}
+
+.corp-header__title {
+  padding-left: 15px;
+}
+
+/* The interactive menu tile */
+.corp-menuItem {
+  
+  margin: 2px 30px 2px 30px;
+  display: flex;
+  align-items: center;
+  gap: var(--space-md, 12px);
+
+  width: 87%;
+  padding: var(--space-lg, 16px);
+
+  background-color: var(--corp-primary-600, #0063a6);
+  color: var(--corp-primary-contrast, #ffffff);
+
+  border-radius: 2px;
+  border: none;
+
+  cursor: pointer;
+  text-align: left;
+
+  transition:
+    background-color 0.15s ease,
+    transform 0.10s ease;
+}
+
+.corp-menuItem:hover {
+  background-color: var(--corp-primary-700, #004f88);
+}
+
+.corp-menuItem:active {
+  transform: scale(0.98);
+  background-color: var(--corp-primary-800, #003b68);
+}
+
+.corp-menuItem:focus-visible {
+  outline: var(--focus-ring, 2px solid #0094ff);
+  outline-offset: 3px;
+}
+
+/* Icon inside the menu item */
+.corp-menuItem__icon {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: inherit;
+}
+
+/* Label */
+.corp-menuItem__label {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.3;
+  color: inherit;
+}

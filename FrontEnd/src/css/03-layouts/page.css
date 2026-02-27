@@ -2,13 +2,33 @@
    Page layout (global gutters + max width)
    ========================================== */
 
-.page {
-  /* Background of the app area */
-  background: var(--surface-app, #eef3f8);
+
+/* Make the whole app take full height */
+html, body, #root {
+  height: 100%;
+}
+
+
+/* Root becomes the flex column: header/top content / footer */
+#root {
+  display: flex;
+  flex-direction: column;
   min-height: 100%;
 }
 
-.page__container {
+.corp-page {
+  /* Background of the app area */
+  display: flex;
+  flex-direction: column;
+  background: var(--surface-app, #eef3f8);  
+  min-height: 100%;
+}
+
+.page__content {
+  flex: 1;
+}
+
+.corp-page__container {
   /* Horizontal gutters that scale with screen */
   padding-inline: var(--space-m);
   padding-block: var(--space-m);
@@ -26,3 +46,13 @@
   }
 }
 
+.corp-page__content {
+  flex: 1;                     /* already needed for sticky footer */
+  min-height: 0;               /* <<< REQUIRED for vertical centering */
+  display: flex;               /* new */
+  justify-content: flex-start;
+  padding-bottom: 20vh;
+  flex-direction: column;      /* keep things stacked vertically */
+  justify-content: center;     /* vertical centering */
+  align-items: center;         /* horizontal centering (optional) */
+}
