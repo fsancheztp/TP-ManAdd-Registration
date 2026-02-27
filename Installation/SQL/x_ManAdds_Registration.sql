@@ -1,5 +1,3 @@
-USE [TPMDB]
-GO
 
 /****** Object:  Table [dbo].[x_ManAdds_Registration]    Script Date: 11/4/2024 2:28:24 PM ******/
 SET ANSI_NULLS ON

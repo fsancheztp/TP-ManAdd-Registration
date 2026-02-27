@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SRManAdd_Backend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+78f50978b0e8480fd73006938dab690fed6754b0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0bda453d6ce134530e1329cfa238df440c52e9c9")]
 [assembly: System.Reflection.AssemblyProductAttribute("SRManAdd_Backend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SRManAdd_Backend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

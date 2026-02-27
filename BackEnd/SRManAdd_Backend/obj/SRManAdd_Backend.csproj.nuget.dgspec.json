@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ESORTIZPOSTR\\OneDrive - Tetra Pak\\Documents\\REPOSITORIES\\TP-SalsaRica-ManAddRegistration\\BackEnd\\SRManAdd_Backend\\SRManAdd_Backend.csproj": {}
+    "C:\\Users\\ESSANCHEZF\\OneDrive - Tetra Pak\\Documents\\SourceCode\\TP-ManAdd-Registration\\BackEnd\\SRManAdd_Backend\\SRManAdd_Backend.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ESORTIZPOSTR\\OneDrive - Tetra Pak\\Documents\\REPOSITORIES\\TP-SalsaRica-ManAddRegistration\\BackEnd\\SRManAdd_Backend\\SRManAdd_Backend.csproj": {
+    "C:\\Users\\ESSANCHEZF\\OneDrive - Tetra Pak\\Documents\\SourceCode\\TP-ManAdd-Registration\\BackEnd\\SRManAdd_Backend\\SRManAdd_Backend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ESORTIZPOSTR\\OneDrive - Tetra Pak\\Documents\\REPOSITORIES\\TP-SalsaRica-ManAddRegistration\\BackEnd\\SRManAdd_Backend\\SRManAdd_Backend.csproj",
+        "projectUniqueName": "C:\\Users\\ESSANCHEZF\\OneDrive - Tetra Pak\\Documents\\SourceCode\\TP-ManAdd-Registration\\BackEnd\\SRManAdd_Backend\\SRManAdd_Backend.csproj",
         "projectName": "SRManAdd_Backend",
-        "projectPath": "C:\\Users\\ESORTIZPOSTR\\OneDrive - Tetra Pak\\Documents\\REPOSITORIES\\TP-SalsaRica-ManAddRegistration\\BackEnd\\SRManAdd_Backend\\SRManAdd_Backend.csproj",
-        "packagesPath": "C:\\Users\\ESORTIZPOSTR\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ESORTIZPOSTR\\OneDrive - Tetra Pak\\Documents\\REPOSITORIES\\TP-SalsaRica-ManAddRegistration\\BackEnd\\SRManAdd_Backend\\obj\\",
+        "projectPath": "C:\\Users\\ESSANCHEZF\\OneDrive - Tetra Pak\\Documents\\SourceCode\\TP-ManAdd-Registration\\BackEnd\\SRManAdd_Backend\\SRManAdd_Backend.csproj",
+        "packagesPath": "C:\\Users\\ESSANCHEZF\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ESSANCHEZF\\OneDrive - Tetra Pak\\Documents\\SourceCode\\TP-ManAdd-Registration\\BackEnd\\SRManAdd_Backend\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\ESORTIZPOSTR\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ESSANCHEZF\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -50,6 +50,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.1.66, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.5.0, )"
@@ -78,7 +82,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.311/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

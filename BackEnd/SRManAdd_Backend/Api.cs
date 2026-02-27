@@ -4,6 +4,8 @@ using System.Data.SqlClient;
 
 var builder = WebApplication.CreateBuilder(args);
 
+AppSettings.Initialize(builder.Configuration);
+
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -299,8 +301,8 @@ app.MapPost("/ManAdds/lotValidation", (LotValidation lotValidation, IConfigurati
                     lotValidationResponse.LotId = row?.ItemArray[0]?.ToString();
                     lotValidationResponse.ExpirationDate = row?.ItemArray[1]?.ToString();
                     lotValidationResponse.Quantity = row?.ItemArray[2]?.ToString();
-                    lotValidationResponse.Par1 = row?.ItemArray[3]?.ToString();
-                    lotValidationResponse.MaterialID = row?.ItemArray[4]?.ToString();
+                    lotValidationResponse.MaterialID = row?.ItemArray[3]?.ToString();
+                    lotValidationResponse.Par2 = row?.ItemArray[4]?.ToString();
                     lotValidationResponse.Par3 = row?.ItemArray[5]?.ToString();
                     lotValidationResponse.Par4 = row?.ItemArray[6]?.ToString();
                     lotValidationResponse.Par5 = row?.ItemArray[7]?.ToString();

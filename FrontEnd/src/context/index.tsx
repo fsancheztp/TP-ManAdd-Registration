@@ -20,16 +20,24 @@ const UserContext = createContext<UserContext>({
   setUser: () => {},
 });
 
+const DEFAULT_USER: TPUser = {
+  id: 0,
+  userName: "Tetra Pak",
+};
+
+
+
 export function UserContextProvider({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  const [user, setUser] = useState({
-    id: 0,
-    userName: "",
-  });
-
+  // const [user, setUser] = useState({
+  //   id: 0,
+  //   userName: "",
+  // });
+  const [user, setUser] = useState(DEFAULT_USER);
+  
   return (
     <UserContext.Provider value={{ user, setUser }}>
       {children}

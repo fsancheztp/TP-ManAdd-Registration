@@ -1,5 +1,4 @@
-USE [TPMDB]
-GO
+
 
 /****** Object:  Table [dbo].[x_ManAdds_LabelTemplateCnfg]    Script Date: 12/12/2024 7:13:54 AM ******/
 SET ANSI_NULLS ON

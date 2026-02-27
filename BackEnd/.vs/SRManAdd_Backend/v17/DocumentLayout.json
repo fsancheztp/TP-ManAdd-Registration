@@ -1,14 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ESORTIZPOSTR\\OneDrive - Tetra Pak\\Documents\\REPOSITORIES\\TP-SalsaRica-ManAddRegistration\\BackEnd\\",
+  "WorkspaceRootPath": "C:\\Users\\ESSANCHEZF\\OneDrive - Tetra Pak\\Documents\\SourceCode\\TP-ManAdd-Registration\\BackEnd\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8A159049-1688-4E4D-8D9A-34FC4C1B66F0}|SRManAdd_Backend\\SRManAdd_Backend.csproj|c:\\users\\esortizpostr\\onedrive - tetra pak\\documents\\repositories\\tp-salsarica-manaddregistration\\backend\\srmanadd_backend\\api.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8A159049-1688-4E4D-8D9A-34FC4C1B66F0}|SRManAdd_Backend\\SRManAdd_Backend.csproj|solutionrelative:srmanadd_backend\\api.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8A159049-1688-4E4D-8D9A-34FC4C1B66F0}|SRManAdd_Backend\\SRManAdd_Backend.csproj|c:\\users\\essanchezf\\onedrive - tetra pak\\documents\\sourcecode\\tp-manadd-registration\\backend\\srmanadd_backend\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8A159049-1688-4E4D-8D9A-34FC4C1B66F0}|SRManAdd_Backend\\SRManAdd_Backend.csproj|solutionrelative:srmanadd_backend\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8A159049-1688-4E4D-8D9A-34FC4C1B66F0}|SRManAdd_Backend\\SRManAdd_Backend.csproj|c:\\users\\esortizpostr\\onedrive - tetra pak\\documents\\repositories\\tp-salsarica-manaddregistration\\backend\\srmanadd_backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{8A159049-1688-4E4D-8D9A-34FC4C1B66F0}|SRManAdd_Backend\\SRManAdd_Backend.csproj|solutionrelative:srmanadd_backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{8A159049-1688-4E4D-8D9A-34FC4C1B66F0}|SRManAdd_Backend\\SRManAdd_Backend.csproj|c:\\users\\essanchezf\\onedrive - tetra pak\\documents\\sourcecode\\tp-manadd-registration\\backend\\srmanadd_backend\\api.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A159049-1688-4E4D-8D9A-34FC4C1B66F0}|SRManAdd_Backend\\SRManAdd_Backend.csproj|solutionrelative:srmanadd_backend\\api.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,21 +18,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\ESORTIZPOSTR\\OneDrive - Tetra Pak\\Documents\\REPOSITORIES\\TP-SalsaRica-ManAddRegistration\\BackEnd\\SRManAdd_Backend\\appsettings.json",
-              "RelativeDocumentMoniker": "SRManAdd_Backend\\appsettings.json",
-              "ToolTip": "C:\\Users\\ESORTIZPOSTR\\OneDrive - Tetra Pak\\Documents\\REPOSITORIES\\TP-SalsaRica-ManAddRegistration\\BackEnd\\SRManAdd_Backend\\appsettings.json",
-              "RelativeToolTip": "SRManAdd_Backend\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-05-26T09:32:08.182Z",
-              "IsPinned": true
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
@@ -40,15 +27,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Api.cs",
-              "DocumentMoniker": "C:\\Users\\ESORTIZPOSTR\\OneDrive - Tetra Pak\\Documents\\REPOSITORIES\\TP-SalsaRica-ManAddRegistration\\BackEnd\\SRManAdd_Backend\\Api.cs",
-              "RelativeDocumentMoniker": "SRManAdd_Backend\\Api.cs",
-              "ToolTip": "C:\\Users\\ESORTIZPOSTR\\OneDrive - Tetra Pak\\Documents\\REPOSITORIES\\TP-SalsaRica-ManAddRegistration\\BackEnd\\SRManAdd_Backend\\Api.cs",
-              "RelativeToolTip": "SRManAdd_Backend\\Api.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T09:29:35.536Z",
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\ESSANCHEZF\\OneDrive - Tetra Pak\\Documents\\SourceCode\\TP-ManAdd-Registration\\BackEnd\\SRManAdd_Backend\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "SRManAdd_Backend\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\ESSANCHEZF\\OneDrive - Tetra Pak\\Documents\\SourceCode\\TP-ManAdd-Registration\\BackEnd\\SRManAdd_Backend\\appsettings.Development.json",
+              "RelativeToolTip": "SRManAdd_Backend\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAB6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-02-24T14:45:13.283Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Api.cs",
+              "DocumentMoniker": "C:\\Users\\ESSANCHEZF\\OneDrive - Tetra Pak\\Documents\\SourceCode\\TP-ManAdd-Registration\\BackEnd\\SRManAdd_Backend\\Api.cs",
+              "RelativeDocumentMoniker": "SRManAdd_Backend\\Api.cs",
+              "ToolTip": "C:\\Users\\ESSANCHEZF\\OneDrive - Tetra Pak\\Documents\\SourceCode\\TP-ManAdd-Registration\\BackEnd\\SRManAdd_Backend\\Api.cs",
+              "RelativeToolTip": "SRManAdd_Backend\\Api.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-23T16:59:47.232Z"
             }
           ]
         }

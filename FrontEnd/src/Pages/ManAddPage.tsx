@@ -7,17 +7,16 @@ import {
   getLabelTemplates,
   lotValidation,
 } from "@/actions/actions";
-import { LogRegistrationSettings } from "@/components/Dialogs";
+
 import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
-  CardDescription,
   CardFooter,
-  CardHeader,
-  CardTitle,
+ // CardHeader,
 } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
+
 import {
   Select,
   SelectTrigger,
@@ -25,6 +24,7 @@ import {
   SelectContent,
   SelectItem,
 } from "@/components/ui/select";
+
 import {
   Table,
   TableBody,
@@ -34,8 +34,10 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
+
 import { useUserContext } from "@/context";
 import { useToast } from "@/hooks/use-toast";
+
 import {
   CustomChangeEvent,
   LabelTemplate,
@@ -45,11 +47,18 @@ import {
   ScanedCode,
   ValidationResponse,
 } from "@/types";
-import { Avatar, AvatarFallback, AvatarImage } from "@radix-ui/react-avatar";
-import { Label } from "@radix-ui/react-label";
+
+// Removed Avatar to avoid stray fallback dot
 import { Trash2Icon } from "lucide-react";
+
 import React, { useEffect, useRef, useState } from "react";
 import { useLocation, useNavigate } from "react-router";
+
+import "@/css/03-layouts/section.css";
+import "@/css/04-components/card.css";
+import "@/css/02-utilities/form-row.css";
+import "@/css/03-layouts/page.css";
+import { ManAddCard } from "@/components/ManAddCard";
 
 const ManAddPage = () => {
   const { state } = useLocation();
@@ -59,27 +68,31 @@ const ManAddPage = () => {
   const { user } = useUserContext();
   const [actualQty, setActualQty] = useState(0);
   const [qtyBag, setQtyBag] = useState(25);
+
   const [scannedCode, setScannedCode] = useState<ScanedCode>({
     barCode1: null,
     barCode2: null,
     barCode3: null,
   });
+
   const [manAdd, setManAdd] = useState<ManAdd | null>(null);
   const [lots, setLots] = useState<ManAddLot[] | null>(null);
   const [templates, setTemplates] = useState<LabelTemplate[] | null>(null);
-  const [selectedTemplate, setSelectedTemplate] =
-    useState<LabelTemplate | null>(null);
+  const [selectedTemplate, setSelectedTemplate] = useState<LabelTemplate | null>(null);
+
   const { toast } = useToast();
   const barCodeInput = useRef<HTMLInputElement>(null);
   const barCodeInput2 = useRef<HTMLInputElement>(null);
+
+  /* ---------------------------------------------------------
+     BUSINESS LOGIC (unchanged)
+  --------------------------------------------------------- */
 
   const handleValidate = async () => {
     if (!user || user.userName === "") {
       alert("Selecciona un usuario para continuar...");
       return;
     }
-
-    // Validate the lot according with selected Label Template the information provided from the Scanner
 
     const lotToValidate: LotValidation = {
       templateName: selectedTemplate?.templateName,
@@ -88,41 +101,30 @@ const ManAddPage = () => {
       barCode3: scannedCode.barCode3 ? scannedCode.barCode3 : "",
       materialId: manAdd?.materialName,
       materialValidation:
-        sessionStorage.getItem("materialValidation") === "true" ? true : false,
+        sessionStorage.getItem("materialValidation") === "true",
     };
-    const validationResult: ValidationResponse = await lotValidation(
-      lotToValidate
-    );
+
+    const validationResult: ValidationResponse = await lotValidation(lotToValidate);
 
     if (validationResult?.validation === "NOT VALID") {
       alert(validationResult.result);
-      setScannedCode({
-        barCode1: null,
-        barCode2: null,
-        barCode3: null,
-      });
+      setScannedCode({ barCode1: null, barCode2: null, barCode3: null });
       return;
     }
 
-    // If Lot is valid, then add it
-    // If Lot Quantity is taken from the Scanned Code, first check if the Qty value exists or is a valid number
-
     if (sessionStorage.getItem("qtyManual") === "false") {
-      const value = Number(validationResult.quantity);  
+      const value = Number(validationResult.quantity);
       if (Number.isNaN(value)) {
         alert(
-          `El valor obtenido del codigo de barras para la cantidad del lote: ${validationResult.quantity} no es valida o no existe. Intentalo de nuevo o introduce la cantidad de forma manual`
+          `El valor obtenido del codigo de barras para la cantidad del lote: ${validationResult.quantity} no es valido.`
         );
-        setScannedCode({
-          barCode1: null,
-          barCode2: null,
-          barCode3: null,
-        });
+        setScannedCode({ barCode1: null, barCode2: null, barCode3: null });
         return;
       }
     }
 
     setActualQty((prev) => prev + 1);
+
     const newLot: ManAddLot = {
       id: 0,
       manAdds_Registration_Id: manAdd?.id,
@@ -131,25 +133,21 @@ const ManAddPage = () => {
           ? qtyBag
           : parseFloat(validationResult.quantity),
       registeredBy: user.userName,
-      lastUpdateAt: "2024-10-31",
+      lastUpdateAt: new Date().toISOString(),
       lotId: validationResult.lotId,
     };
+
     await addNewLot(newLot);
+    fetchLotsById(id);
 
-    const manAddid = id;
-    fetchLotsById(manAddid);
+    setScannedCode({ barCode1: null, barCode2: null, barCode3: null });
 
-    setScannedCode({
-      barCode1: null,
-      barCode2: null,
-      barCode3: null,
-    });
     toast({
       title: "Cantidad añadida",
       description: "Escanea otra bolsa hasta alcanzar el objetivo",
-      variant: "default",
     });
-    if (barCodeInput?.current) barCodeInput.current.focus();
+
+    barCodeInput.current?.focus();
   };
 
   const handleComplete = async () => {
@@ -157,6 +155,7 @@ const ManAddPage = () => {
       alert("Selecciona un usuario para continuar...");
       return;
     }
+
     await completePhase({
       id: manAdd?.id || 0,
       phaseID: manAdd?.phaseID || 0,
@@ -172,11 +171,13 @@ const ManAddPage = () => {
       registrationStatus: "Complete",
       equipmentName: manAdd?.equipmentName || "",
     });
+
     navigate(`/`);
   };
 
-  const handleDeleteLot = async (lotid: string) => {
-    const response = await deleteLot(lotid);
+  const handleDeleteLot = async (lotId: string) => {
+    const response = await deleteLot(lotId);
+
     if (response.value === 1) {
       toast({
         title: "Lote Eliminado",
@@ -184,8 +185,9 @@ const ManAddPage = () => {
         variant: "destructive",
       });
     }
+
     fetchLotsById(id);
-    if (barCodeInput?.current) barCodeInput.current.focus();
+    barCodeInput.current?.focus();
   };
 
   const fetchData = async (id: string | string[] | undefined) => {
@@ -196,10 +198,12 @@ const ManAddPage = () => {
   const fetchLotsById = async (id: string | string[] | undefined) => {
     const data = await fetchLots(id);
     setLots(data);
+
     const totalQty = data.reduce(
       (acc: number, curr: ManAddLot) => acc + curr.actualAmount,
       0
     );
+
     setActualQty(totalQty);
   };
 
@@ -208,275 +212,225 @@ const ManAddPage = () => {
     setTemplates(data);
   };
 
-  const updateQtyBag = (e: number) => {
-    setQtyBag(e);
-  };
+  const updateQtyBag = (value: number) => setQtyBag(value);
 
   const handleBarCodeChange = (e: CustomChangeEvent, barCode: string) => {
     const { value } = e.target;
-    if (barCode) setScannedCode({ ...scannedCode, [barCode]: value });
-    // if (
-    //   barCode === "barCode1" &&
-    //   sessionStorage.getItem("barCodeManualInput") === "false"
-    // ) {
-    //   if (barCodeInput2?.current) barCodeInput2.current.focus();
-    // }
+    setScannedCode({ ...scannedCode, [barCode]: value });
   };
 
-  const handleTemplateChange = (e: string) => {
-    const fetchTemplate = templates?.find(
-      (template) => template.templateName === e
-    );
-    if (fetchTemplate) setSelectedTemplate(fetchTemplate);
-    console.log(selectedTemplate);
+  const handleTemplateChange = (value: string) => {
+    const found = templates?.find((t) => t.templateName === value);
+    console.log("Selected template:", found);
+    if (found) setSelectedTemplate(found);
 
-    if (barCodeInput?.current) barCodeInput.current.focus();
+    barCodeInput.current?.focus();
   };
 
   const applyLocalSettings = () => {
+    const mv = sessionStorage.getItem("materialValidation");
+    const qm = sessionStorage.getItem("qtyManual");
+    const bi = sessionStorage.getItem("barCodeManualInput");
 
-    console.log(sessionStorage.getItem("materialValidation"))
-    const materialValidation = sessionStorage.getItem("materialValidation")
-    const qtyManual = sessionStorage.getItem("qtyManual")
-    const barCodeManualInput = sessionStorage.getItem("barCodeManualInput")
-
-    sessionStorage.setItem("materialValidation", materialValidation || "false");
-    sessionStorage.setItem("qtyManual", qtyManual || "false");
-    sessionStorage.setItem("barCodeManualInput", barCodeManualInput || "false");
-  }
+    sessionStorage.setItem("materialValidation", mv || "false");
+    sessionStorage.setItem("qtyManual", qm || "false");
+    sessionStorage.setItem("barCodeManualInput", bi || "false");
+  };
 
   useEffect(() => {
     fetchData(id);
     fetchLotsById(id);
     fetchLabelTemplates();
-    applyLocalSettings()
-    if (barCodeInput?.current) barCodeInput.current.focus();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    applyLocalSettings();
+    barCodeInput.current?.focus();
   }, []);
 
+  /* ---------------------------------------------------------
+     UI LAYER — compact fields using corp-form-row
+  --------------------------------------------------------- */
+
+  const fmtDate = (iso?: string) => {
+    if (!iso) return "—";
+    const d = new Date(iso);
+    return Number.isNaN(d.getTime()) ? "—" : d.toLocaleString();
+  };
+
+  const qtyOk =
+    manAdd?.targetAmount !== undefined &&
+    actualQty === manAdd?.targetAmount;
+
+  // Enable "Validar" only when a template is selected and required barcodes are present
+  const canValidate = Boolean(
+    selectedTemplate &&
+      scannedCode.barCode1 &&
+      (selectedTemplate.barCode2 === "" || Boolean(scannedCode.barCode2))
+  );
+
   return (
-    <div className="lg:px-10 lg:py-10 mt-0 p-0 min-h-screen bg-secondary">
-      <div className="flex flex-col mx-auto lg:w-[70%] w-full gap-5 text-white">
-        <Card className="mx-auto mt-2 w-full bg-primary">
-          <CardHeader>
-            <div className="flex flex-row justify-between items-center w-full">
-              <div>
-                <CardTitle className="text-orange">Salsa Rica</CardTitle>
-                <CardDescription>Manual Addition {id}</CardDescription>
-              </div>
-              <div className="p-2 hover:bg-primary/10 rounded-full cursor-pointer">
-                <LogRegistrationSettings />
-              </div>
-            </div>
-          </CardHeader>
-          <CardContent>
-            <div className="flex flex-col gap-2 lg:p-4 p-0 w-[80%] mx-auto">
-              <div className="flex md:flex-row flex-col gap-2 justify-between items-center">
-                <span className="font-extralight sm:text-lg text-sm text-gray-200">
-                  Equipo:{" "}
-                </span>
-                <p className="font-bold md:text-xl text-md">
-                  {manAdd?.equipmentName}
-                </p>
-              </div>
-              <div className="flex md:flex-row flex-col gap-2 justify-between items-center">
-                <span className="font-extralight sm:text-lg text-sm text-gray-200">
-                  Material:{" "}
-                </span>
-                <p className="font-bold md:text-xl text-md">
-                  {manAdd?.materialName}
-                </p>
-              </div>
-              <div className="flex md:flex-row flex-col gap-2 justify-between items-center">
-                <span className="font-extralight sm:text-lg text-sm text-gray-200">
-                  Fecha de inicio:{" "}
-                </span>
-                <p className="font-bold md:text-xl text-md">
-                  {new Date(
-                    manAdd?.startDateTime ? manAdd.startDateTime : ""
-                  ).toLocaleString()}
-                </p>
-              </div>
-              <div className="flex md:flex-row flex-col gap-2 justify-between items-center">
-                <span className="font-extralight sm:text-lg text-sm text-gray-200">
-                  Cantidad Objetivo:{" "}
-                </span>
-                <p className="font-bold md:text-xl text-md">
-                  {manAdd?.targetAmount}
-                </p>
-              </div>
-              <div className="flex md:flex-row flex-col gap-2 justify-between items-center">
-                <span className="font-extralight sm:text-lg text-sm">
-                  Cantidad por bolsa:{" "}
-                </span>
-                <Input
-                  type="number"
-                  step={0.5}
-                  onChange={(e: React.ChangeEvent<Element>) =>
-                    updateQtyBag(
-                      parseFloat((e.target as HTMLInputElement).value)
-                    )
-                  }
-                  defaultValue={25}
-                  className="font-bold w-[5rem] text-right md:text-lg bg-input-enabled border-none text-blue text-md"
-                  disabled={
-                    sessionStorage.getItem("qtyManual") === "true"
-                      ? false
-                      : true
-                  }
-                />
-              </div>
-              <div className="flex md:flex-row flex-col gap-2 justify-between items-center">
-                <span className="font-extralight sm:text-lg text-sm text-gray-200">
-                  Cantidad Ingresada:{" "}
-                </span>
-                <div className="flex flex-row items-center justify-center gap-2">
-                  {actualQty && (
-                    <p
-                      className={`font-bold md:text-xl text-md ${
-                        actualQty !== manAdd?.targetAmount
-                          ? "text-red-500"
-                          : "text-green-500"
-                      }`}
-                    >
-                      {actualQty}
-                    </p>
-                  )}
-                  <Avatar>
-                    <AvatarImage
-                      className="w-[20px] h-[20px]"
-                      src={
-                        actualQty !== manAdd?.targetAmount
-                          ? "/images/redcross.png"
-                          : "/images/greencheck.png"
-                      }
+    <main className="page">
+      <div className="page__container">
+
+        {/* SECTION HEADER */}
+        <section className="corp-section">
+          <header className="corp-section-header corp-section-header--primary">
+            <h2 className="corp-section-title corp-section-title--on-primary">
+              Manual Addition {id}
+            </h2>
+          </header>
+        </section>
+
+        {/* CARD */}
+
+        {manAdd && (<ManAddCard 
+                        manAddInfo={manAdd} 
+                        showBasket={false} 
                     />
-                    <AvatarFallback>Check</AvatarFallback>
-                  </Avatar>
-                </div>
-              </div>
-            </div>
-          </CardContent>
-          <CardFooter>
-            <div className="flex flex-col gap-5 w-full">
-              <Label htmlFor="barcode">Bar Code</Label>
-              <Select onValueChange={(e) => handleTemplateChange(e)}>
-                <SelectTrigger className="w-full">
-                  <SelectValue placeholder="Plantilla de Etiqueta" />
+                    )
+        }   
+
+        {/* Tipo de Etiqueta y Códigos de barra leídos*/}
+        <div className="corp-card corp-card-content" style={{ margin: "10px 0px 10px 0px", padding: "10px 15px 10px 15px" }}>
+            <label className="corp-form-row__label" style={{ fontSize: "18px"}}>
+              Tipo de Etiqueta
+            </label>
+            <div className="corp-form-row__control">         
+              <Select onOpenChange={(o) => console.log('Select open?', o)} onValueChange={handleTemplateChange}>
+                <SelectTrigger id="labelTemplate" className="corp-selectTrigger" style={{margin: "10px"}}>
+                  <SelectValue placeholder="Seleccione..."/>
                 </SelectTrigger>
-                <SelectContent className=" text-white">
-                  {templates?.map((template) => (
-                    <SelectItem key={template.id} value={template.templateName}>
-                      {template.templateName}
+
+                <SelectContent
+                  position="popper"
+                  side="bottom"
+                  align="start"
+                  sideOffset={6}
+                  avoidCollisions={false}    // reduces measurement complexity during test
+                  className="z-[9999]"
+                >
+                  {templates?.map((tmpl) => (
+                    <SelectItem key={tmpl.id} value={tmpl.templateName}>
+                      {tmpl.templateName}
                     </SelectItem>
                   ))}
                 </SelectContent>
               </Select>
-              <div className="flex sm:flex-row flex-col w-full gap-2">
+
+            </div>      
+          {/* Bar Codes */}
+          <div className="corp-form-row" style={{ margin: "10px 0" }}>
+            <label className="corp-form-row__label" htmlFor="barcode">
+              Bar Code
+            </label>
+            <div className="corp-form-row__control">
+              <div className="corp-inlineFields">
                 <Input
                   type="text"
                   id="barcode"
                   placeholder="Barcode 1"
-                  className="w-full bg-input-enabled text-primary"
                   value={scannedCode.barCode1 || ""}
-                  onChange={(e: CustomChangeEvent) =>
-                    handleBarCodeChange(e, "barCode1")
-                  }
-                  autoFocus={scannedCode.barCode1 ? false : true}
+                  onChange={(e) => handleBarCodeChange(e, "barCode1")}
                   ref={barCodeInput}
                   disabled={!selectedTemplate}
+                  className="corp-input"
                 />
                 {selectedTemplate?.barCode2 !== "" && (
                   <Input
                     type="text"
                     id="barcode2"
                     placeholder="Barcode 2"
-                    className="w-full bg-input-enabled text-primary"
                     value={scannedCode.barCode2 || ""}
-                    onChange={(e: CustomChangeEvent) =>
-                      handleBarCodeChange(e, "barCode2")
-                    }
-                    autoFocus={scannedCode.barCode2 ? false : true}
+                    onChange={(e) => handleBarCodeChange(e, "barCode2")}
                     ref={barCodeInput2}
                     disabled={!selectedTemplate}
+                    className="corp-input"
                   />
                 )}
               </div>
-              <Button
-                size={"lg"}
-                onClick={() => handleValidate()}
-                disabled={!scannedCode}
-                className="text-lg uppercase text-white bg-orange hover:bg-third"
-              >
-                Validar
-              </Button>
-              <Button
-                size={"lg"}
-                onClick={() => handleComplete()}
-                variant="secondary"
-                className="bg-blue text-white hover:bg-third text-lg uppercase"
-              >
-                Finalizar Fase
-              </Button>
             </div>
-          </CardFooter>
-        </Card>
-        <div>
-          <Table>
-            <TableCaption className="text-primary">
-              Listado de lotes registrados
-            </TableCaption>
-            <TableHeader className="text-primary">
-              <TableRow>
-                <TableHead className="w-[100px]">Lote</TableHead>
-                <TableHead className="text-center">Cantidad</TableHead>
-                <TableHead className="text-right md:text-left">
-                  Ultima actualizacion
-                </TableHead>
-                <TableHead className="text-center">Borrar</TableHead>
-              </TableRow>
-            </TableHeader>
-            {lots && (
-              <TableBody>
-                {lots?.map((item) => (
-                  <TableRow key={item.id}>
-                    <TableCell className="font-medium  dark:text-white text-primary">
-                      {item.lotId}
-                    </TableCell>
-                    <TableCell className="text-center dark:text-white text-primary">
-                      {item.actualAmount}
-                    </TableCell>
-                    <TableCell className="text-right dark:text-white text-primary">
-                      <div className="flex flex-col md:flex-row md:gap-2">
-                        <p>
-                          {item?.lastUpdateAt
-                            ? new Date(item.lastUpdateAt).toLocaleDateString()
-                            : ""}
-                        </p>
-                        <p className="text-xs md:text-sm">
-                          {item?.lastUpdateAt
-                            ? new Date(item.lastUpdateAt).toLocaleTimeString()
-                            : ""}
-                        </p>
-                      </div>
-                    </TableCell>
-                    <TableCell className="text-center dark:text-white text-primary">
-                      <Button
-                        variant={"default"}
-                        onClick={() => handleDeleteLot(item.id.toString())}
-                        className="bg-red text-white"
-                      >
-                        <Trash2Icon /> Borrar
-                      </Button>
-                    </TableCell>
-                  </TableRow>
-                ))}
-              </TableBody>
-            )}
-          </Table>
+          </div>
+          {/* Buttons */}
+          <div className="corp-btn-row">
+            <Button
+              size="lg"
+              onClick={handleValidate}
+              disabled={!canValidate}
+              variant="primary"
+              className="corp-btn--block"
+            >
+              Validar
+            </Button>
+            <Button
+              size="lg"
+              variant="secondary"
+              onClick={handleComplete}
+              className="corp-btn--block"
+            >
+              Fin Fase
+            </Button>
+          </div>
         </div>
+        {/* TABLE AREA */}
+        <div className="corp-card corp-card-content">
+          <section className="corp-section corp-section--table" aria-labelledby="tags-read-title">
+            <header className="corp-section__header">
+              <h2 style={{margin: 5, fontSize: "18px", fontWeight: 600, paddingBottom: "10px"}}>
+                Etiquetas Leídas
+              </h2>
+            </header>
+
+            <div className="corp-section__body">
+              <Table>
+                {/* remove the TableCaption */}
+                <TableHeader>
+                  <TableRow>
+                    <TableHead className="corp-table__th--narrow">Lote</TableHead>
+                    <TableHead className="corp-table__th--center">Cantidad</TableHead>
+                    <TableHead className="corp-table__th--center" style={{textAlign: "center"}}>Leído</TableHead>
+                    <TableHead className="corp-table__th--center">Borrar</TableHead>
+                  </TableRow>
+                </TableHeader>
+
+                {lots && (
+                  <TableBody>
+                    {lots.map((item) => (
+                      <TableRow key={item.id}>
+                        <TableCell className="corp-table__cell-strong">
+                          {item.lotId}
+                        </TableCell>
+
+                        <TableCell style={{ textAlign: "right" }} className="corp-table__cell-mono">
+                          {item.actualAmount}
+                        </TableCell>
+
+                        <TableCell style={{ textAlign: "right" }} className="corp-table__cell-right">
+                          <div className="corp-stack--tight">
+                            <span style={{ fontSize: "13px"}}>
+                              {item?.lastUpdateAt ? new Date(item.lastUpdateAt).toLocaleDateString() : ""}
+                            </span>
+                            <span> </span>
+                            <span style={{ fontSize: "13px"}}>
+                              {item?.lastUpdateAt
+                                ? new Date(item.lastUpdateAt).toLocaleTimeString([], { hour12: false })
+                                : ""}
+                            </span>
+                          </div>
+                        </TableCell>
+                        <TableCell className="corp-table__cell-center">
+                          <Button variant="danger" onClick={() => handleDeleteLot(item.id.toString())}>
+                            <Trash2Icon aria-hidden="true" />
+                          </Button>
+                        </TableCell>
+                      </TableRow>
+                    ))}
+                  </TableBody>
+                )}
+              </Table>
+            </div>
+          </section>
+        </div>
+
       </div>
-    </div>
+    </main>
   );
 };
 

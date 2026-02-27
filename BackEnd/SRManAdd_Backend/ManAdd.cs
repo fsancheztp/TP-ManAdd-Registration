@@ -8,6 +8,7 @@ namespace SRManAdd_Backend
         public int? PhaseID { get; set; }
         public string? PhaseName { get; set; }
         public int? MaterialID { get; set; }
+        //public Material material { get; set }
         public string? MaterialName { get; set; }
         public float? TargetAmount { get; set; }
         public float? ActualAmount { get; set; }
@@ -44,8 +45,8 @@ namespace SRManAdd_Backend
         public string? LotId { get; set; }
         public string? ExpirationDate { get; set; }
         public string? Quantity { get; set; }
-        public string? Par1 { get; set; }
         public string? MaterialID { get; set; }
+        public string? Par2 { get; set; }
         public string? Par3 { get; set; }
         public string? Par4 { get; set; }
         public string? Par5 { get; set; }
