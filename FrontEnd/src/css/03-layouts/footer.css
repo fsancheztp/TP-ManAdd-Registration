@@ -1,0 +1,35 @@
+/* footer.css */
+
+.corp-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 0px;
+  padding: 8px16px;
+  background: var(--footer-bg, #334155); /* fallback similar to slate-700 */
+  color: var(--footer-fg, #e5e7eb);      /* fallback similar to gray-200/300 */
+
+  /* Ensure text is readable on dark bg */
+  /* You may centralize contrast rules in your theme instead */
+}
+
+@media (min-width: 768px) {
+  .corp-footer {
+    flex-direction: row;
+  }
+}
+
+.corp-footer__text,
+.corp-footer__meta {
+  font: var(--font-body-small, 12px/18px 'Inter', sans-serif); /* token for footer text */
+  color: var(--text-on-footer, #e5e7eb); /* token for footer text */
+  /* If you support dark mode via data-theme, rely on tokens instead of hardcoded color */
+}
+
+
+.corp-footer > p {
+  margin: 0px;
+}
+

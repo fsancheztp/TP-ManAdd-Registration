@@ -1,0 +1,15 @@
+ /* -------------------------------------------------------------
+   Corporate Label
+   Used above inputs and in form layouts
+-------------------------------------------------------------- */
+
+.corp-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  margin-bottom: 4px;
+  display: inline-block;
+
+  /* Disabled states (matches your design tokens) */
+  opacity: 1;
+}

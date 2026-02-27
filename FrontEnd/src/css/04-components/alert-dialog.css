@@ -1,0 +1,92 @@
+
+/* Overlay: slightly darker dim, still no blur */
+.corp-alert-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.65); 
+}
+
+
+/* Content: keep centered, opaque panel */
+.corp-alert-content,
+:where(.corp-alert-content) {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  z-index: 1010;
+  transform: translate(-50%, -50%);
+
+  display: block;
+  min-width: 280px;
+  max-width: min(92vw, 560px);
+  min-height: 160px;
+
+  background: var(--alert-bg, var(--surface-1, #E9ECEF)) !important;
+  background-color: var(--alert-bg, var(--surface-1, #E9ECEF)) !important;
+
+  border: 1px solid var(--panel-border, rgba(0,0,0,0.08));
+  border-radius: 12px;
+  box-shadow: 0 18px 60px rgba(0,0,0,0.28);
+  padding: 20px;                /* slightly tighter padding */
+  text-align: center;
+  font-family: var(--corp-font-family, system-ui, "Segoe UI", Roboto, Arial, sans-serif);
+  color: var(--text-default, #0f172a);
+  outline: none;
+}
+
+/* Title + description centered, corporate weights/colors */
+.corp-alert-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  margin: 0 0 0px 0;
+}
+.corp-alert-title {
+  font-weight: 800;
+  font-size: 18px;
+  margin: 0;
+}
+.corp-alert-description {
+  margin: 0;
+  font-size: 14px;
+  color: var(--text-muted, #394455);
+}
+
+/* Footer centered (for the “Ok” button) */
+.corp-alert-footer {
+  display: flex!important;
+  justify-content: center!important;
+  align-items: center!important;
+  gap: 0px!important;
+  margin-top: 0%!important;
+}
+
+
+/* Button size harmonious with the compact layout */
+.corp-alert-btn {
+  display: inline-flex;               /* ensure intrinsic width and easy centering */
+  align-items: center;
+  justify-content: center;
+  margin: 0!important;
+  white-space: nowrap;
+  appearance: none;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  padding: 6px 12px;       /* slight increase in horizontal comfort */
+  font: inherit;
+  font-weight: 700;        /* stronger, like previous look */
+  line-height: 1.1;
+  cursor: pointer;
+}
+.corp-alert-btn:focus-visible { outline: none; box-shadow: var(--focus-ring); }
+
+/* If your panel is light (surface-1), use brand button; if panel is brand,
+   keep the on-brand variant you used before. For light panel: */
+.corp-alert-btn--primary {
+  background: var(--btn-primary-bg, #0b5cff);
+  color: var(--btn-primary-fg, #ffffff);
+  border-color: var(--btn-primary-border, transparent);
+}
+.corp-alert-btn--primary:hover { background: var(--btn-primary-bg-hover, #094bd1); }

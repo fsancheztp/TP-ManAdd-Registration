@@ -1,0 +1,28 @@
+/* ==========================================
+   Page layout (global gutters + max width)
+   ========================================== */
+
+.page {
+  /* Background of the app area */
+  background: var(--surface-app, #eef3f8);
+  min-height: 100%;
+}
+
+.page__container {
+  /* Horizontal gutters that scale with screen */
+  padding-inline: var(--space-m);
+  padding-block: var(--space-m);
+  margin-inline: auto;
+
+  /* Constrain line length and card width on desktop */
+  max-width: 960px; /* adjust to your preferred page width */
+}
+
+/* Tighter gutters on small screens */
+@media (max-width: 480px) {
+  .page__container {
+    padding-inline: var(--space-s);
+    padding-block: var(--space-s);
+  }
+}
+

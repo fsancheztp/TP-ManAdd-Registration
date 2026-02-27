@@ -1,0 +1,48 @@
+/* tooltip.css */
+
+/* Floating panel */
+.corp-tooltip__content {
+  z-index: var(--z-tooltip, 1100);
+  overflow: hidden;
+
+  background: var(--color-tooltip-bg, var(--surface-inverse));
+  color: var(--color-tooltip-fg, var(--text-on-inverse));
+  border-radius: var(--radius-md);
+  padding-inline: var(--space-3);
+  padding-block: var(--space-1_5, 6px);
+
+  font: var(--font-ui-xs); /* replaces text-xs */
+  white-space: nowrap;
+  box-shadow: var(--shadow-md);
+
+  /* Initial state */
+  opacity: 0;
+  transform: scale(0.96);
+  will-change: opacity, transform, translate;
+  transition:
+    opacity var(--motion-fast, 150ms) ease-out,
+    transform var(--motion-fast, 150ms) ease-out,
+    translate var(--motion-fast, 150ms) ease-out;
+}
+
+/* Open/closed transitions via Radix data-state */
+
+/* Directional offsets using data-side */
+
+/* Optional: arrow styling if you use <TooltipPrimitive.Arrow /> */
+
+/* High-contrast tweaks (optional) */
+@media (forced-colors: active) {
+  .corp-tooltip__content {
+    border: 1px solid CanvasText;
+  }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .corp-tooltip__content {
+    transition: none !important;
+    transform: none !important;
+    translate: 0 !important;
+  }
+}

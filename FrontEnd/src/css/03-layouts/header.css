@@ -1,0 +1,72 @@
+ :root {
+  /* Tune these to your corporate palette */
+  --brand-blue: #023491;
+  --on-brand: #ffffff;
+  --header-height: 56px;
+  --icon-slot: 48px; /* keeps the title centered regardless of text length */
+}
+
+.page-header {
+  height: var(--header-height);
+  background: var(--brand-blue);
+  color: var(--on-brand);
+
+  /* Three equal slots: [back] [title] [home] */
+  display: grid;
+  grid-template-columns: var(--icon-slot) 1fr var(--icon-slot);
+  align-items: center;
+  color: var(--on-barnd);
+  background: var(--brand-blue);
+
+  padding: 0 8px;
+  box-sizing: border-box;
+
+  position: relative;
+  z-index: 10;
+}
+
+
+.page-header.is-sticky {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.page-title {
+  margin: 0;
+  padding: 0 8px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--on-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.icon-btn {
+  inline-size: 40px;
+  block-size: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  background: transparent;
+  color: var(--on-brand);
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.icon-btn:focus-visible {
+  outline: 2px solid #ffffff;
+  outline-offset: 2px;
+}
+
+@media (min-width: 768px) {
+  .page-title {
+    font-size: 20px;
+  }
+}
+

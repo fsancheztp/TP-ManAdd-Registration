@@ -1,0 +1,109 @@
+/* ================================
+   Corporate Select (Radix Select)
+   Namespace: corp-select__
+   ================================ */
+
+/* --- Trigger (button that opens the list) --- */
+.corp-select__trigger {
+  inline-size: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+
+  background: var(--surface-control);
+  color: var(--text-primary);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-md);
+  padding-inline: var(--space-3);
+  padding-block: var(--space-2_5, 10px);
+
+  font: var(--font-body-sm);
+  line-height: 1;
+  outline: none;
+
+  transition:
+    border-color var(--motion-fast, 120ms) ease-out,
+    box-shadow var(--motion-fast, 120ms) ease-out,
+    background-color var(--motion-fast, 120ms) ease-out;
+}
+
+.corp-select__trigger:hover {
+  background: var(--surface-control-hover);
+}
+
+.corp-select__trigger:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 2px;
+}
+
+/* Variants (optional) */
+
+/* --- Placeholder / Value (Radix renders both) --- */
+
+/* --- Icon (chevron) --- */
+
+/* --- Content (popover) & Viewport (list container) --- */
+
+.corp-select__content {
+  z-index: var(--z-popover, 1000);
+  overflow: hidden;
+  background: var(--surface-popover, #fff);
+  color: var(--text-popover);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  will-change: transform, opacity;
+
+  /* match trigger width */
+  min-width: var(--radix-select-trigger-width);
+
+  /* internal spacing */
+  padding: 4px 0; 
+
+  /* default closed state */
+  opacity: 0;
+  transform: translateY(-4px) scale(0.98);
+
+  transition:
+    opacity var(--motion-fast, 150ms) ease-out,
+    transform var(--motion-fast, 150ms) ease-out;
+}
+
+.corp-select__content[data-state='open'] {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  pointer-events: auto;
+  visibility: visible;
+}
+
+.corp-select__content[data-state='closed'] {
+  opacity: 0;
+  transform: translateY(-4px) scale(0.98);
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.corp-select__content[data-side='bottom'] {
+  margin-top: 0px!important;
+}
+
+.corp-select__content[data-side='top'] {
+  margin-bottom: 0px !important;
+}
+
+.corp-select__item {
+  padding: 6px 10px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  line-height: 0.8;
+}
+
+.corp-select__item:hover,
+.corp-select__item[data-highlighted] {
+  background: var(--surface-hover, #f0f0f0);
+}
+
+
+
+

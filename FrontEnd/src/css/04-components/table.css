@@ -1,0 +1,84 @@
+ /* -------------------------------------------------------------
+   Corporate Table
+   Uses tokens from theme.css
+-------------------------------------------------------------- */
+
+.corp-table-wrapper {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+/* Base table */
+.corp-table {
+  width: 100%;
+  border-collapse: collapse;
+  color: var(--color-text);
+  font-size: 14px;
+}
+
+/* Head */
+.corp-thead .corp-th {
+  background: #eef2f7;
+  color: var(--color-text);
+  font-weight: 700;
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid var(--color-border);
+}
+
+/* Body */
+.corp-tbody .corp-td {
+  padding: 12px;
+  border-bottom: 1px solid var(--color-border);
+}
+.corp-tr:hover {
+  background: #f7f9fc;
+  cursor: pointer;
+}
+
+/* Footer / caption */
+.corp-tfoot .corp-td {
+  padding: 12px;
+}
+.corp-caption {
+  caption-side: bottom;
+  padding: 12px;
+  font-size: 13px;
+  color: var(--color-text-muted);
+  text-align: center;
+}
+
+/* Utilities */
+.text-right { text-align: right; }
+.text-center { text-align: center; }
+
+/* Remove bottom border on last body row */
+.corp-tbody .corp-tr:last-child .corp-td {
+  border-bottom: none;
+}
+
+
+/* global.css / components.css */
+.table-layout-fixed {
+  table-layout: fixed !important; /* ensure we win */
+  width: 100%;
+  border-collapse: collapse;       /* optional but recommended */
+}
+
+
+.corp-tableSection__header {
+  text-align: center;
+  padding: 4px 0 2px 0;
+  background: transparent;
+  border: 0;
+  margin-top: 12px;
+  position: relative;
+}
+.corp-tableSection__header::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 1px;
+  background: var(--border-subtle, #d0d3d8);
+}

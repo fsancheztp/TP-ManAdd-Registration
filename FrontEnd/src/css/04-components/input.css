@@ -1,0 +1,39 @@
+ /* -------------------------------------------------------------
+   Corporate Input
+   Matches theme.css & Weighing UI
+-------------------------------------------------------------- */
+
+.corp-input {
+  width: 95%;
+  height: 36px;
+  font-size: 14px;
+  color: var(--color-text);
+
+  padding: 0px 8px;
+
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+
+  outline: none;
+  transition: border-color 120ms ease, box-shadow 120ms ease;
+}
+
+/* Placeholder */
+.corp-input::placeholder {
+  color: var(--color-text-light);
+}
+
+/* Focus ring */
+.corp-input:focus-visible {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 1px var(--color-primary);
+}
+
+/* Disabled */
+.corp-input:disabled {
+  background: #f0f2f5;
+  color: var(--color-text-light);
+  cursor: not-allowed;
+  opacity: 0.7;
+}

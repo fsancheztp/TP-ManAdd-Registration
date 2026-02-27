@@ -1,0 +1,190 @@
+/* ==========================================
+   Form Row (Label + Control on one line)
+   ========================================== */
+
+.corp-form-row {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  column-gap: var(--space-s);
+  row-gap: var(--space-2xs);
+  align-items: baseline;
+  margin-bottom: var(--space-m);
+}
+
+.corp-form-row__label {
+  color: var(--text-secondary);
+  font-weight: 600;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.corp-form-row__control {
+  min-width: 0; /* allow control to shrink/wrap */
+}
+
+/* Static read-only values */
+.corp-staticValue {
+  color: var(--text-primary);
+  font-size: 0.95rem;
+  line-height: 1.3;
+}
+
+/* ==========================================
+   Small layout helpers (no Tailwind)
+   ========================================== */
+
+/* Vertical stacks for sections like the footer controls */
+.corp-vstack {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-m);
+  width: 100%;
+}
+
+/* Inline group of fields (e.g., Barcode 1 + Barcode 2) */
+.corp-inlineFields {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-s);
+}
+
+/* Small metric with an icon */
+.corp-metric {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.corp-metric__value {
+  font-weight: 700;
+}
+
+.corp-metric__value.is-ok {
+  color: var(--success, #2e7d32);
+}
+
+.corp-metric__value.is-warn {
+  color: var(--danger, #d64545);
+}
+
+/* 20px avatar/image helper (to replace w-[20px] h-[20px]) */
+
+/* Block spacer to avoid inline style margins */
+.corp-blockSpacer {
+  margin-top: var(--space-xl);
+}
+
+/* Responsive: stack label above control on very narrow screens */
+@media (max-width: 420px) {
+  .corp-form-row {
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
+
+  .corp-form-row__label {
+    white-space: normal;
+  }
+}
+
+
+/* ==========================================
+   NEW: Form container to standardize label column width
+   ========================================== */
+
+.corp-form {
+  /* Tweak this width to align all labels perfectly */
+  --form-label-w: 12rem;
+}
+
+.corp-form .corp-form-row {
+  grid-template-columns: var(--form-label-w) 1fr;
+}
+
+/* ==========================================
+   Metric (value + status icon) spacing & a11y
+   ========================================== */
+
+.corp-metric {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.corp-metric__value {
+  font-weight: 700;
+}
+
+.corp-metric__value.is-ok {
+  color: var(--success, #2e7d32);
+}
+
+.corp-metric__value.is-warn {
+  color: var(--danger, #d64545);
+}
+
+/* Replace w-[20px] h-[20px] */
+.corp-icon-20 {
+  width: 20px;
+  height: 20px;
+}
+
+.sr-only {
+  position: absolute !important;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0,0,0,0);
+  white-space: nowrap; border: 0;
+}
+
+/* ==========================================
+   Select trigger (shadcn Radix Select) styling
+   ========================================== */
+
+.corp-selectTrigger {
+  width: 100%;
+  min-height: 38px;
+  padding: var(--space-xs);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  background: var(--surface-card);
+  color: var(--text-primary);
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.corp-selectTrigger:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 2px;
+}
+
+/* ==========================================
+   Buttons
+   ========================================== */
+
+.corp-btn--block { width: 100%; }
+
+/* ==========================================
+   Responsive
+   ========================================== */
+
+@media (max-width: 520px) {
+  .corp-form .corp-form-row {
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
+  .corp-form .corp-form-row__label {
+    white-space: normal;
+  }
+}
+
+/* .corp-form-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.corp-form-row__control {
+  position: relative;
+  overflow: hidden;
+  flex: 1;
+} */

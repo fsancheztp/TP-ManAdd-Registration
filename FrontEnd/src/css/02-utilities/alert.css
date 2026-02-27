@@ -1,0 +1,70 @@
+/* Base container */
+.corp-alert {
+  background: var(--surface-elevated); /* replaces bg-primary from Tailwind usage */
+  color: var(--text-secondary);        /* replaces text-secondary */
+  border: none;                        /* replaces border-none */
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  padding: var(--space-6);
+  display: grid;
+  gap: var(--space-4);
+}
+
+/* Size modifiers */
+
+/* Variants — tune to your palette */
+
+/* Structure */
+.corp-alert__header {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.corp-alert__title {
+  font: var(--font-title-md);
+  color: var(--text-strong);
+}
+
+.corp-alert__description {
+  font: var(--font-body-sm);
+  color: var(--text-secondary);
+}
+
+.corp-alert__footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--space-2);
+}
+
+/* Button aligned with corporate buttons; if you rely on global .btn, you can swap */
+.corp-alert__button {
+  appearance: none;
+  border: 1px solid var(--border-subtle);
+  background: var(--surface-neutral);
+  color: var(--text-primary);
+  border-radius: var(--radius-md);
+  padding: var(--space-2) var(--space-3);
+  font: var(--font-label-sm);
+  cursor: pointer;
+  transition: background-color var(--motion-fast, 120ms), opacity var(--motion-fast, 120ms);
+}
+
+.corp-alert__button:hover {
+  background: var(--surface-neutral-hover);
+}
+.corp-alert__button:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 2px;
+}
+.corp-alert__button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Dark mode idea (if applicable)
+@media (prefers-color-scheme: dark) {
+  .corp-alert--default { background: var(--surface-elevated-dark); }
+}
+*/
+
+/* Reduced motion consideration handled at dialog level (overlay/content), if any */

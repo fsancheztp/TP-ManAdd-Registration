@@ -1,0 +1,22 @@
+ /* src/styles/pagination.css */
+
+/* Container */
+.corp-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0 16px;
+  background: var(--color-surface);
+  border-top: 1px solid var(--color-border); /* pairs well with the table */
+}
+
+/* Optional: subtle label (like "A list of open ManAdds") */
+
+/* Space for icon buttons row if you want separate lines */
+.corp-pagination-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}

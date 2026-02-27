@@ -1,0 +1,44 @@
+ /* -------------------------------------------------------------
+   Corporate Button System
+   Matches theme.css tokens & Weighing Corporate UI
+-------------------------------------------------------------- */
+
+.corp-btn {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+
+  border-radius: var(--radius-sm);
+  padding: 0 var(--space-m);
+  height: 36px;
+
+  cursor: pointer;
+  border: 1px solid;
+  background: lightgray;
+
+  transition: background 120ms ease, border-color 120ms ease, color 120ms ease;
+}
+
+.corp-btn-row {
+  display: flex;
+  gap: 8px;        /* spacing between buttons */
+  width: 100%;
+}
+
+/* override the block behaviour ONLY inside this row */
+.corp-btn-row .corp-btn--block {
+  flex: 1;          /* share the row equally */
+  display: flex;    /* keep your button's inline-flex features */
+}
+
+
+/* -------------------- DISABLED STATE ------------------------- */
+.corp-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

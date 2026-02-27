@@ -1,0 +1,44 @@
+ .corp-progress-root {
+  width: 100%;
+  flex: 1 1 auto;
+  min-width: 0;
+  height: 8px;
+  background: var(--progress-track);
+  border-radius: 999px;
+  overflow: hidden;
+  position: relative;
+}
+
+.corp-progress-row {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  flex-wrap: nowrap;
+  width: 100%;
+  margin-bottom: 0px !important;
+}
+
+.corp-progress-indicator {
+  height: 100%;
+  width: 100%;
+  background: var(--progress-fill);
+  border-radius: 999px;
+  transition: transform 200ms ease;
+}
+
+.corp-progress-text {
+  display: inline-block;;
+  text-align: left;
+  padding: 0;
+  width: 3rem;
+  min-width: 3rem; 
+  border: 0px solid black;
+}
+
+.corp-progress-action {
+  flex: 0 0 auto !important; /* don’t grow; don’t shrink */
+  margin-left: auto;    /* pushes to the far right within the row */
+  white-space: nowrap;  /* keep label on one line */
+  width: auto !important;    /* allow button to size based on content */
+}
+

@@ -1,0 +1,45 @@
+
+@import "01-settings/tppm-theme.css";
+@import "04-components/components.css";
+@import "04-components/badge.css";
+
+
+/* These base styles make the theme “visibly active” */
+html, body, #root { height: 100%; }
+body {
+  margin: 0;
+  background: var(--page-bg);
+  font-family: var(--font-main);
+  color: var(--text-main);
+
+  
+  --surface-page: var(--color-page-bg, #eef2f7);
+  --surface-card: var(--color-surface, #ffffff);   /* card surface */
+  --surface-primary: var(--color-primary, #0b5ab8);
+
+  /* Text on neutral surfaces */
+  --text-emphasis: #111827;  /* neutral-900 */
+  --text-primary:  #1f2937;  /* neutral-800 */
+  --text-secondary:#374151;  /* neutral-700 */
+  --text-muted:    #6b7280;  /* neutral-500/600 */
+
+  /* Text on primary surface */
+  --on-primary: #ffffff;
+
+  /* Borders / outlines */
+  --border-default: #d1d5db;
+  --border-subtle: rgba(0,0,0,.08);
+
+  /* Focus */
+  --focus-ring: 2px solid #2563eb;
+}
+
+  :root {
+    --color-primary: 30 0 71;
+    --color-secondary: 111 114 185;
+    --color-third: 111 114 185;
+    
+  }
+
+
+
