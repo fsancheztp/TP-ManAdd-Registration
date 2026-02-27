@@ -15,7 +15,7 @@ type HeaderProps = {
   sticky?: boolean;
 };
 
-const Header: React.FC<HeaderProps> = ({ title, onBack, onHome, sticky = false }) => {
+export const Header: React.FC<HeaderProps> = ({ title, onBack, onHome, sticky = false }) => {
   const navigate = useNavigate();
   const handleBack = onBack ?? (() => navigate(-1));
   const handleHome = onHome ?? (() => navigate("/"));

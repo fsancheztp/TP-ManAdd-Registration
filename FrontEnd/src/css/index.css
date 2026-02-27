@@ -2,6 +2,7 @@
 @import "01-settings/tppm-theme.css";
 @import "04-components/components.css";
 @import "04-components/badge.css";
+@import "04-components/menuItem.css";
 
 
 /* These base styles make the theme “visibly active” */

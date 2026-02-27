@@ -11,6 +11,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
 import { ShoppingBasket } from "lucide-react";
+import { wrap } from "module";
 
 interface ManAddCardProps {
   manAddInfo: ManAdd;
@@ -71,7 +72,7 @@ export function ManAddCard({manAddInfo, showBasket = true, onBasketClick}:ManAdd
               className="corp-progress-root"
             />
 
-            <div style={{ display: "flex", justifyContent: "space-between", width: "100%", margin: "10px 0" }}>
+            <div style={{ display: "flex", flexWrap:"wrap", justifyContent: "space-between", width: "100%", margin: "10px 0" }}>
               <span>
                 {progress}% = {manAddInfo.actualAmount}Kg
               </span>
@@ -79,17 +80,18 @@ export function ManAddCard({manAddInfo, showBasket = true, onBasketClick}:ManAdd
               <span>
                 100% = {manAddInfo.targetAmount}Kg
               </span>
-
-              {showBasket && (
-                <Button
-                  variant="secondary"
-                  className="corp-btn corp-progress-action"
-                  onClick={() => onBasketClick?.(manAddInfo.id)}
-                >
-                  <ShoppingBasket />
-                  Registrar Lotes
-                </Button>
-              )}
+            </div>
+            <div style={{ display: "flex", flexWrap:"wrap", justifyContent: "center", width:"100%"}}>
+            {showBasket && (
+              <Button
+                variant="secondary"
+                style={{width:"60%"}}
+                onClick={() => onBasketClick?.(manAddInfo.id)}
+              >
+                <ShoppingBasket/>
+                Registrar
+              </Button>
+            )}
             </div>
           </div>
 

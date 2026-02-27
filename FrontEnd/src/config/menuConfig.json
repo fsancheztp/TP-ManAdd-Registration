@@ -1,0 +1,23 @@
+[
+  {
+    "key": "manualAdd",
+    "label": "Manual Addition",
+    "icon": "manual-add",
+    "route": "/ManAddList",
+    "enabled": true
+  },
+  {
+    "key": "register",
+    "label": "Registration in Unit",
+    "icon": "register",
+    "route": "/register",
+    "enabled": true
+  },
+  {
+    "key": "logout",
+    "label": "Logout",
+    "icon": "logout",
+    "route": "/logout",
+    "enabled": false
+  }
+]
